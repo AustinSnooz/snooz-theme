@@ -1,6 +1,7 @@
 {
   "current": {
-    "logo_width": 90,
+    "logo": "shopify:\/\/shop_images\/SNOOZ-Logo-PNG.png",
+    "logo_width": 150,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -108,7 +109,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -142,14 +143,14 @@
         "settings": {
         }
       },
-      "14952540001915115444": {
-        "type": "shopify:\/\/apps\/upcart-cart-drawer\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
+      "2267199344015275021": {
+        "type": "shopify:\/\/apps\/deliverr-fast-tags\/blocks\/main\/d1895120-1caf-4af4-97c2-280d442481f8",
         "disabled": false,
         "settings": {
         }
       },
-      "2267199344015275021": {
-        "type": "shopify:\/\/apps\/deliverr-fast-tags\/blocks\/main\/d1895120-1caf-4af4-97c2-280d442481f8",
+      "14952540001915115444": {
+        "type": "shopify:\/\/apps\/upcart-cart-drawer\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
         "disabled": false,
         "settings": {
         }
@@ -216,6 +217,17 @@
           "background": "#e5e6ff",
           "background_gradient": "",
           "text": "#2f394e",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-cfb9e3b0-75bd-4e13-901b-ee992a32fd66": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "linear-gradient(#FFFFFF 10%, #E5EDF5, #E5EDF5, #E5EDF5)",
+          "text": "#121212",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",

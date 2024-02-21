@@ -31,14 +31,17 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "new-menu-bar-7-20-23",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "always",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
-        "menu_color_scheme": "",
+        "menu_color_scheme": "scheme-cfb9e3b0-75bd-4e13-901b-ee992a32fd66",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
