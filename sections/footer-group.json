@@ -5,6 +5,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "brand_information_zEExzD": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
         "footer-1": {
           "type": "link_list",
           "settings": {
@@ -19,7 +25,14 @@
             "menu": "footer"
           }
         },
-        "klaviyo_email_marketing_sms_form_embed_block_tW7MqC": {
+        "link_list_F74rV8": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Company",
+            "menu": "company"
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_i6wNQL": {
           "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
             "formId": "LPT7Pp"
@@ -27,9 +40,11 @@
         }
       },
       "block_order": [
+        "brand_information_zEExzD",
         "footer-1",
         "footer-0",
-        "klaviyo_email_marketing_sms_form_embed_block_tW7MqC"
+        "link_list_F74rV8",
+        "klaviyo_email_marketing_sms_form_embed_block_i6wNQL"
       ],
       "custom_css": [
 

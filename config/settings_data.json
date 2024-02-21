@@ -94,6 +94,7 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
+    "brand_image": "shopify:\/\/shop_images\/SNOOZ-Logo-PNG.png",
     "social_facebook_link": "https:\/\/facebook.com\/getsnooz",
     "social_instagram_link": "https:\/\/www.instagram.com\/snooz\/",
     "social_youtube_link": "https:\/\/www.youtube.com\/@snoozsleep",
@@ -131,6 +132,24 @@
     "blocks": {
       "11532412952436166569": {
         "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-inject\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14952540001915115444": {
+        "type": "shopify:\/\/apps\/upcart-cart-drawer\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "2267199344015275021": {
+        "type": "shopify:\/\/apps\/deliverr-fast-tags\/blocks\/main\/d1895120-1caf-4af4-97c2-280d442481f8",
         "disabled": false,
         "settings": {
         }
