@@ -5,48 +5,47 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
-          }
-        },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
+            "heading": "Shop",
+            "menu": "shop-footer"
+          }
+        },
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
             "menu": "footer"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "klaviyo_email_marketing_sms_form_embed_block_tW7MqC": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "formId": "LPT7Pp"
           }
         }
       },
       "block_order": [
-        "footer-0",
         "footer-1",
-        "footer-2"
+        "footer-0",
+        "klaviyo_email_marketing_sms_form_embed_block_tW7MqC"
       ],
       "custom_css": [
 
       ],
       "settings": {
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-5",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
+        "enable_follow_on_shop": false,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
+        "payment_enable": false,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 36,
+        "padding_top": 32,
         "padding_bottom": 36
       }
     }
