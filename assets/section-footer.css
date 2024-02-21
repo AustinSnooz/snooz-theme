@@ -38,6 +38,17 @@
     row-gap: 6rem;
     margin-bottom: 0;
   }
+
+  .footer .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer .grid__item {
+    width: calc(20% - 10px);
+    margin: 0;
+  }
 }
 
 .footer__content-bottom {
@@ -375,6 +386,8 @@
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
     font-size: 1.4rem;
+    margin-bottom: 0;
+    padding: 0 0;
   }
 
   .footer-block__details-content > :first-child .list-menu__item--link {
