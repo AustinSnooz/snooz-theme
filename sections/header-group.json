@@ -5,16 +5,16 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "announcement_KUranm": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
-            "link": ""
+            "text": "Giveaway Alert 🚨: Win a Free SNOOZ Pro! Click  for more details.me to our store",
+            "link": "https:\/\/getsnooz.com\/pages\/snooz-pro-giveaway"
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement_KUranm"
       ],
       "settings": {
         "color_scheme": "",
