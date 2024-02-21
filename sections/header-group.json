@@ -8,7 +8,7 @@
         "announcement_KUranm": {
           "type": "announcement",
           "settings": {
-            "text": "Giveaway Alert 🚨: Win a Free SNOOZ Pro! Click  for more details.me to our store",
+            "text": "Giveaway Alert 🚨: Win a Free SNOOZ Pro! Click  for more details",
             "link": "https:\/\/getsnooz.com\/pages\/snooz-pro-giveaway"
           }
         }
@@ -16,8 +16,11 @@
       "block_order": [
         "announcement_KUranm"
       ],
+      "custom_css": [
+        "p {font-weight: bold; font-size: 1.5rem;}"
+      ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-4d3c822d-9eb9-4c0d-b7a6-7dd4cdbd1b30",
         "show_line_separator": false,
         "show_social": false,
         "auto_rotate": false,
