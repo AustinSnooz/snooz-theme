@@ -34,7 +34,9 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'text_input' -%}
-              <div class="field grid-item">
+              <div class="grid-item">
+                <p>{{ block.settings.label }}</p>
+              <div class="field">
                 <input
                         class="field__input custom-contact-input"
                         autocomplete="{{ block.settings.autocomplete }}"
@@ -42,35 +44,58 @@
                         id="ContactForm-{{ block.id }}"
                         name="contact[{{ block.settings.label | handleize }}]"
                         placeholder="{{ block.settings.placeholder }}"
+                        {% if block.settings.required %}required="required"{% endif %}
                 >
-                <label class="field__label" for="ContactForm-{{ block.id }}">{{ block.settings.label }}</label>
+                {% if block.settings.placeholder != blank %}
+                  <label class="field__label" for="ContactForm-{{ block.id }}">{{ block.settings.placeholder }}</label>
+                {% endif %}
+              </div>
               </div>
             {%- when 'email_input' -%}
-              <div class="field field--with-error grid-item">
+            <div class="grid-item">
+              <p>{{ block.settings.label }}</p>
+              <div class="field field--with-error">
                 <input
-                        class="field__input"
+                        class="field__input custom-contact-input"
                         autocomplete="email"
                         type="email"
                         id="ContactForm-{{ block.id }}"
                         name="contact[email]"
                         placeholder="{{ block.settings.placeholder }}"
+                        {% if block.settings.required %}required="required"{% endif %}
                 >
-                <label class="field__label" for="ContactForm-{{ block.id }}">{{ block.settings.label }}</label>
+                {% if block.settings.placeholder != blank %}
+                  <label class="field__label" for="ContactForm-{{ block.id }}">{{ block.settings.placeholder }}</label>
+                {% endif %}
               </div>
+            </div>
             {%- when 'textarea' -%}
-              <div class="field grid-item grid-item--2-columns">
+            <div class="grid-item grid-item--2-columns">
+              <p>{{ block.settings.label }}</p>
+              <div class="field">
                 <textarea
                         id="ContactForm-{{ block.id }}"
                         class="text-area field__input"
                         name="contact[{{ block.settings.label | handleize }}]"
                         placeholder="{{ block.settings.placeholder }}"
+                        {% if block.settings.required %}required="required"{% endif %}
                         rows="10"
                 ></textarea>
-                <label class="field__label" for="ContactForm-{{ block.id }}">{{ block.settings.label }}</label>
+                {% if block.settings.placeholder != blank %}
+                  <label class="field__label" for="ContactForm-{{ block.id }}">{{ block.settings.placeholder }}</label>
+                {% endif %}
               </div>
+            </div>
             {%- when 'dropdown' -%}
-              <div class="field grid-item">
-                <select id="ContactForm-{{ block.id }}" name="contact[{{ block.settings.label | handleize }}]" class="field__input">
+            <div class="grid-item">
+              <p>{{ block.settings.label }}</p>
+              <div class="field">
+                <select
+                        id="ContactForm-{{ block.id }}"
+                        name="contact[{{ block.settings.label | handleize }}]"
+                        class="field__input"
+                        {% if block.settings.required %}required="required"{% endif %}
+                >
                   {% if block.settings.option1 != blank %}
                     <option value="{{ block.settings.option1 }}">{{ block.settings.option1 }}</option>
                   {% endif %}
@@ -83,7 +108,6 @@
                     <option value="{{ block.settings.option3 }}">{{ block.settings.option3 }}</option>
                   {% endif %}
 
-                  <!-- Repeat the pattern for options 4 through 10 -->
                   {% if block.settings.option4 != blank %}
                     <option value="{{ block.settings.option4 }}">{{ block.settings.option4 }}</option>
                   {% endif %}
@@ -112,8 +136,8 @@
                     <option value="{{ block.settings.option10 }}">{{ block.settings.option10 }}</option>
                   {% endif %}
                 </select>
-                <label class="field__label" for="ContactForm-{{ block.id }}">{{ block.settings.label }}</label>
               </div>
+            </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -212,6 +236,12 @@
           "id": "placeholder",
           "label": "Placeholder",
           "default": "Enter your name"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
+          "default": false
         }
       ]
     },
@@ -230,6 +260,12 @@
           "id": "placeholder",
           "label": "Placeholder",
           "default": "Enter your email"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
+          "default": false
         }
       ]
     },
@@ -248,6 +284,12 @@
           "id": "placeholder",
           "label": "Placeholder",
           "default": "Enter your message"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
+          "default": false
         }
       ]
     },
@@ -260,6 +302,12 @@
           "id": "label",
           "label": "Label",
           "default": "Select Option"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
+          "default": false
         },
         {
           "type": "text",

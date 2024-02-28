@@ -97,6 +97,11 @@ select.field__input::-ms-expand {
   box-sizing: border-box; /* Keep width consistent with padding */
 }
 
+.grid-item > p {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
 
 
 
