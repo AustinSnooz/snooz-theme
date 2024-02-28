@@ -1,3 +1,4 @@
+/* Base styles for the entire contact form */
 .contact img {
   max-width: 100%;
 }
@@ -11,29 +12,93 @@
 }
 
 .contact .field {
-  margin-bottom: 1.5rem;
-}
-
-@media screen and (min-width: 750px) {
-  .contact .field {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 1rem; /* Base margin between fields */
 }
 
 .contact__button {
-  margin-top: 3rem;
+  margin-top: 3rem; /* Space above the submit button */
 }
 
+.contact .text-area {
+  height: 150px; /* Fixed height for textarea */
+  width: 100%; /* Ensure textarea takes full width */
+}
+
+.contact select.field__input {
+  appearance: none; /* Remove default browser styling */
+  background-color: white; /* Solid background for readability */
+  border: 1px solid #ccc; /* Border for definition */
+  padding: 10px; /* Padding for aesthetics */
+  z-index: 100; /* Ensure dropdown is above other elements */
+  position: relative; /* Needed for z-index to take effect */
+}
+
+.field__label {
+  display: block; /* Labels are block level for better alignment */
+  margin-bottom: .5rem; /* Space between label and input */
+}
+
+.field__input,
+select.field__input {
+  width: 100%; /* Inputs take full available width */
+  box-sizing: border-box; /* Padding and border included in width/height */
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Border for inputs */
+}
+
+/* Enhancements for select dropdown */
+select.field__input::-ms-expand {
+  display: none; /* Hide the default arrow in IE */
+}
+
+/* Custom arrow for select element */
+.select-arrow {
+  pointer-events: none; /* Ignore mouse events on arrow icon */
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Responsive adjustments */
 @media screen and (min-width: 750px) {
+  .contact .field {
+    margin-bottom: 1.5rem; /* Increased margin for larger screens */
+  }
+
   .contact__button {
-    margin-top: 4rem;
+    margin-top: 4rem; /* Increased space above the button on larger screens */
+  }
+
+  .contact .grid--2-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    grid-gap: 20px; /* Space between columns */
+  }
+
+  .contact .grid-item--2-columns {
+    grid-column: span 2; /* Textarea spans two columns */
   }
 }
 
-@media screen and (min-width: 750px) {
-  .contact__fields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-  }
+.contact .field__label {
+  display: block;
+  margin-bottom: 5px;
+  animation: none !important; /* To stop any label animation */
+  transition: none !important;  /* To stop any label transitions */
 }
+
+.contact .custom-contact-input {
+  appearance: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: block; /* Ensure input is full width */
+  width: 100%; /* Ensure input is full width */
+  box-sizing: border-box; /* Keep width consistent with padding */
+}
+
+
+
+
+
+
