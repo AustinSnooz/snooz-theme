@@ -138,6 +138,26 @@
                 </select>
               </div>
             </div>
+            {%- when 'checkbox_group' -%}
+              <div class="grid-item grid-item--2-columns">
+                <p>{{ block.settings.checkboxes_description }}</p>
+                <div class="checkbox-group">
+                  {% for i in (1..8) %}
+                    {% assign checkbox_enabled_key = 'checkbox_' | append: i | append: '_enabled' %}
+                    {% assign checkbox_label_key = 'checkbox_' | append: i | append: '_label' %}
+                    {% if block.settings[checkbox_enabled_key] %}
+                      <div class="checkbox">
+                        <input
+                                type="checkbox"
+                                id="ContactForm-{{ block.id }}-Checkbox{{ i }}"
+                                name="contact[{{ block.settings[checkbox_label_key] | handleize }}]"
+                        >
+                        <label for="ContactForm-{{ block.id }}-Checkbox{{ i }}">{{ block.settings[checkbox_label_key] }}</label>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -290,6 +310,114 @@
           "id": "required",
           "label": "Required",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "checkbox_group",
+      "name": "Checkbox Group",
+      "settings": [
+        {
+          "type": "text",
+          "id": "checkboxes_description",
+          "label": "Description for Checkboxes",
+          "default": "Please select your preferences:"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox_1_enabled",
+          "label": "Enable Checkbox 1",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "checkbox_1_label",
+          "label": "Checkbox 1 Label",
+          "default": "Checkbox 1"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox_2_enabled",
+          "label": "Enable Checkbox 2",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "checkbox_2_label",
+          "label": "Checkbox 2 Label",
+          "default": "Checkbox 2"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox_3_enabled",
+          "label": "Enable Checkbox 3",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "checkbox_3_label",
+          "label": "Checkbox 3 Label",
+          "default": "Checkbox 3"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox_4_enabled",
+          "label": "Enable Checkbox 4",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "checkbox_4_label",
+          "label": "Checkbox 4 Label",
+          "default": "Checkbox 4"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox_5_enabled",
+          "label": "Enable Checkbox 5",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "checkbox_5_label",
+          "label": "Checkbox 5 Label",
+          "default": "Checkbox 5"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox_6_enabled",
+          "label": "Enable Checkbox 6",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "checkbox_6_label",
+          "label": "Checkbox  Label",
+          "default": "Checkbox 6"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox_7_enabled",
+          "label": "Enable Checkbox 6",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "checkbox_7_label",
+          "label": "Checkbox 7 Label",
+          "default": "Checkbox 7"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox_8_enabled",
+          "label": "Enable Checkbox 8",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "checkbox_8_label",
+          "label": "Checkbox 8 Label",
+          "default": "Checkbox 8"
         }
       ]
     },
