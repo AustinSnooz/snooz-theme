@@ -5,6 +5,46 @@
   {% render 'header-drawer' %}
 {% endcomment %}
 
+<style>
+    .image-with-link-blocks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px; /* Adjust the gap between the blocks */
+        row-gap: -32px;
+        padding: 0 16px; /* Add padding on the sides */
+    }
+
+    .image-with-link-block {
+        text-align: center; /* Aligns the text to the center */
+        margin-bottom: 16px; /* Space between the blocks and the following content */
+    }
+
+    .image-with-link-image-link {
+        display: block;
+    }
+
+    .image-with-link-image {
+        width: 100%; /* Sets width relative to the container */
+        height: 150px; /* Fixed height for all images */
+        object-fit: cover; /* Covers the box with the image without stretching; crops if necessary */
+        border-radius: 8px; /* Rounds the corners of the image */
+    }
+
+    .image-with-link-text {
+        margin-top: -24px; /* Brings the text closer to the image */
+    }
+
+    .image-with-link-title {
+        font-size: 2rem; /* Larger font size for the title */
+        font-weight: normal; /* Makes the title bold */
+        margin-bottom: -12px; /* Space between the title and the summary */
+    }
+
+    .image-with-link-summary {
+        font-size: 1.3rem; /* Standard font size for the summary */
+    }
+</style>
+
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
@@ -21,7 +61,7 @@
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-              {%- for link in section.settings.menu.links -%}
+              {%- for link in section.settings.mobile_menu.links -%}
                 <li>
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
@@ -122,6 +162,23 @@
                 </li>
               {%- endfor -%}
             </ul>
+              <div class="image-with-link-blocks">
+                  {% for block in section.blocks %}
+                      {% if block.type == 'image_with_link' %}
+                          <div class="image-with-link-block">
+                              {% if block.settings.image %}
+                                  <a href="{{ block.settings.link }}" class="image-with-link-image-link">
+                                      <img src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.title | escape }}" class="image-with-link-image">
+                                  </a>
+                              {% endif %}
+                              <div class="image-with-link-text">
+                                  <h3 class="image-with-link-title">{{ block.settings.title }}</h3>
+                                  <p class="image-with-link-summary">{{ block.settings.summary }}</p>
+                              </div>
+                          </div>
+                      {% endif %}
+                  {% endfor %}
+              </div>
           </nav>
           <div class="menu-drawer__utility-links">
             {%- if shop.customer_accounts_enabled -%}
