@@ -50,6 +50,7 @@
   text-decoration: none;
   transition: text-decoration var(--duration-short) ease;
   word-wrap: break-word;
+  text-decoration-color: #6CD7BD;
 }
 
 .mega-menu__link--level-2 {
@@ -72,10 +73,12 @@
 .mega-menu__link--active {
   color: rgb(var(--color-foreground));
   text-decoration: underline;
+  text-decoration-color: #6CD7BD;
 }
 
 .mega-menu__link--active:hover {
   text-decoration-thickness: 0.2rem;
+  text-decoration-color: #6CD7BD;
 }
 
 .mega-menu .mega-menu__list--condensed {
@@ -84,4 +87,26 @@
 
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
+}
+
+.header__top-level-link {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: quasimoda, sans-serif;
+}
+
+.width-underline {
+  position: relative;
+  display: inline-block; /* Ensures the container fits the content */
+}
+
+.width-underline:after {
+  content: '';
+  display: block;
+  margin-top: 5px; /* Distance from the text */
+  height: 3px; /* Thickness of the underline */
+  width: 150%; /* Width relative to the parent element, can be more than 100% */
+  background-color: #6CD7BD;
+  position: absolute;
+  left: -22%; /* Adjusts the starting position to the left */
 }

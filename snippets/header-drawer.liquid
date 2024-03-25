@@ -251,7 +251,7 @@
             </ul>
               <div class="image-with-link-blocks">
                   {% for block in section.blocks %}
-                      {% if block.type == 'image_with_link' %}
+                      {% if block.type == 'mobile_image_with_link' %}
                           <div class="image-with-link-block">
                               {% if block.settings.image %}
                                   <a href="{{ block.settings.link }}" class="image-with-link-image-link">
