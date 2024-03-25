@@ -32,26 +32,17 @@
     "header": {
       "type": "header",
       "blocks": {
-        "image_with_link_czw4jg": {
-          "type": "image_with_link",
+        "mobile_image_with_link_E83hkV": {
+          "type": "mobile_image_with_link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SNOOZ_Original_Power_On.png",
+            "image": "shopify:\/\/shop_images\/snooz-original-white-noise-machine-charcoal_dcdf36ce-995a-4707-a9ef-3efac4ab1dd0.jpg",
             "title": "Snooz Original",
-            "summary": "Get a Snooz Original!",
+            "summary": "Get a snooz Original!",
             "link": "shopify:\/\/products\/snooz-white-noise-machine"
           }
         },
-        "image_with_link_ETbyUR": {
-          "type": "image_with_link",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/snooz_pro_giveaway_hero_e5b58901-aade-4555-89f5-d64be9d63e2b.jpg",
-            "title": "Snooz Pro",
-            "summary": "Get a Snooz Pro!",
-            "link": "shopify:\/\/products\/snooz-pro-white-noise-machine"
-          }
-        },
-        "image_with_link_4WfUje": {
-          "type": "image_with_link",
+        "mobile_image_with_link_QEgJRX": {
+          "type": "mobile_image_with_link",
           "settings": {
             "image": "shopify:\/\/shop_images\/230622_-_BREEZ_LIFESTYLE-2037_sm.jpg",
             "title": "Breez",
@@ -59,8 +50,17 @@
             "link": "shopify:\/\/products\/snooz-breez-smart-bedroom-fan-sound-machine"
           }
         },
-        "image_with_link_caUAKe": {
-          "type": "image_with_link",
+        "mobile_image_with_link_gVCQ3M": {
+          "type": "mobile_image_with_link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/snooz_pro_giveaway_hero_e5b58901-aade-4555-89f5-d64be9d63e2b.jpg",
+            "title": "Snooz Pro",
+            "summary": "Get a Snooz Pro!",
+            "link": "shopify:\/\/products\/snooz-pro-white-noise-machine"
+          }
+        },
+        "mobile_image_with_link_7GNWqh": {
+          "type": "mobile_image_with_link",
           "settings": {
             "image": "shopify:\/\/shop_images\/SNOOZ-G1-Charcoal_-_Hero_SM.png",
             "title": "Snooz Go",
@@ -70,10 +70,10 @@
         }
       },
       "block_order": [
-        "image_with_link_czw4jg",
-        "image_with_link_ETbyUR",
-        "image_with_link_4WfUje",
-        "image_with_link_caUAKe"
+        "mobile_image_with_link_E83hkV",
+        "mobile_image_with_link_QEgJRX",
+        "mobile_image_with_link_gVCQ3M",
+        "mobile_image_with_link_7GNWqh"
       ],
       "custom_css": [
 
