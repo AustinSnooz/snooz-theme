@@ -131,10 +131,11 @@
         "dropdown2_image_G9Rgxf": {
           "type": "dropdown2_image",
           "settings": {
-            "title": "title",
-            "blurb": "",
-            "summary": "summary",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/WellRestedRoommatesCloud.png",
+            "title": "Well Rested Roommate Set",
+            "blurb": "SAVE $10",
+            "summary": "2-Pack of SNOOZ Original",
+            "link": "shopify:\/\/products\/well-rested-roomate-set-2-pack-original"
           }
         }
       },
