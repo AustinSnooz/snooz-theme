@@ -81,10 +81,11 @@
         "dropdown1_image_M6fXdg": {
           "type": "dropdown1_image",
           "settings": {
-            "title": "title",
-            "blurb": "",
-            "summary": "summary",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/snooz_pro_giveaway_hero_e5b58901-aade-4555-89f5-d64be9d63e2b.jpg",
+            "title": "SNOOZ Pro",
+            "blurb": "+ TRAVEL CASE",
+            "summary": "Latest model with real fan noise, upgraded features, and travel case",
+            "link": "shopify:\/\/products\/snooz-pro-white-noise-machine"
           }
         },
         "dropdown1_image_zhAnxR": {
