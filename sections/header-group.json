@@ -101,10 +101,11 @@
         "dropdown1_image_8iaaif": {
           "type": "dropdown1_image",
           "settings": {
-            "title": "title",
-            "blurb": "",
-            "summary": "summary",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/breez-shopify-hero.jpg",
+            "title": "Breez Bedroom Fan",
+            "blurb": "2-IN-1",
+            "summary": "Smart bedroom fan with separate controls for air and sound",
+            "link": "shopify:\/\/products\/snooz-breez-smart-bedroom-fan-sound-machine"
           }
         },
         "dropdown2_image_Wm9jBb": {
