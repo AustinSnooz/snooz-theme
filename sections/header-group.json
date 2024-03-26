@@ -111,10 +111,11 @@
         "dropdown2_image_Wm9jBb": {
           "type": "dropdown2_image",
           "settings": {
-            "title": "title",
-            "blurb": "",
-            "summary": "summary",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/DreamTeam.png",
+            "title": "Dream Team Bundle",
+            "blurb": "SAVE $20",
+            "summary": "The ultimate perfect nights sleep: Breez, SNOOZ Original, and Go",
+            "link": "shopify:\/\/products\/dream-team"
           }
         },
         "dropdown2_image_YVcd9L": {
