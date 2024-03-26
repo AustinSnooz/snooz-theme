@@ -121,10 +121,11 @@
         "dropdown2_image_YVcd9L": {
           "type": "dropdown2_image",
           "settings": {
-            "title": "title",
-            "blurb": "",
-            "summary": "summary",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/StayorGoTraveler_sSet.png",
+            "title": "Stay or Go Travel Set",
+            "blurb": "#1 GIFT",
+            "summary": "SNOOZ Original, Travel Case, and Snooz Go",
+            "link": "shopify:\/\/products\/stay-or-go-bundle"
           }
         },
         "dropdown2_image_G9Rgxf": {
