@@ -67,13 +67,84 @@
             "summary": "Get a Snooz Go!",
             "link": "shopify:\/\/products\/snooz-go-travel-white-noise-machine"
           }
+        },
+        "dropdown1_image_AFXy4p": {
+          "type": "dropdown1_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/snooz-original-white-noise-machine-cloud_2b70e3f4-d15c-461d-a610-286c6aab807d.jpg",
+            "title": "SNOOZ Original",
+            "blurb": "BESTSELLER",
+            "summary": "Real fan inside with app control for premium sleep white noise",
+            "link": "shopify:\/\/products\/snooz-white-noise-machine"
+          }
+        },
+        "dropdown1_image_M6fXdg": {
+          "type": "dropdown1_image",
+          "settings": {
+            "title": "title",
+            "blurb": "",
+            "summary": "summary",
+            "link": ""
+          }
+        },
+        "dropdown1_image_zhAnxR": {
+          "type": "dropdown1_image",
+          "settings": {
+            "title": "title",
+            "blurb": "",
+            "summary": "summary",
+            "link": ""
+          }
+        },
+        "dropdown1_image_8iaaif": {
+          "type": "dropdown1_image",
+          "settings": {
+            "title": "title",
+            "blurb": "",
+            "summary": "summary",
+            "link": ""
+          }
+        },
+        "dropdown2_image_Wm9jBb": {
+          "type": "dropdown2_image",
+          "settings": {
+            "title": "title",
+            "blurb": "",
+            "summary": "summary",
+            "link": ""
+          }
+        },
+        "dropdown2_image_YVcd9L": {
+          "type": "dropdown2_image",
+          "settings": {
+            "title": "title",
+            "blurb": "",
+            "summary": "summary",
+            "link": ""
+          }
+        },
+        "dropdown2_image_G9Rgxf": {
+          "type": "dropdown2_image",
+          "settings": {
+            "title": "title",
+            "blurb": "",
+            "summary": "summary",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "mobile_image_with_link_E83hkV",
         "mobile_image_with_link_QEgJRX",
         "mobile_image_with_link_gVCQ3M",
-        "mobile_image_with_link_7GNWqh"
+        "mobile_image_with_link_7GNWqh",
+        "dropdown1_image_AFXy4p",
+        "dropdown1_image_M6fXdg",
+        "dropdown1_image_zhAnxR",
+        "dropdown1_image_8iaaif",
+        "dropdown2_image_Wm9jBb",
+        "dropdown2_image_YVcd9L",
+        "dropdown2_image_G9Rgxf"
       ],
       "custom_css": [
 
