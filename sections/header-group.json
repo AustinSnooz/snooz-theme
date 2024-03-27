@@ -153,7 +153,7 @@
         "dropdown2_image_G9Rgxf"
       ],
       "custom_css": [
-        ".menu-drawer-container {background-image: linear-gradient(#ffffff 10%, #e5edf5, #e5edf5, #e5edf5); font-size: 20px; padding: 60px 20px 80px 20px;}"
+        ".menu-drawer-container {background-image: linear-gradient(#ffffff 10%, #e5edf5, #e5edf5, #e5edf5);}"
       ],
       "settings": {
         "logo_position": "middle-left",
