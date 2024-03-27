@@ -227,7 +227,7 @@
       "scheme-cfb9e3b0-75bd-4e13-901b-ee992a32fd66": {
         "settings": {
           "background": "#ffffff",
-          "background_gradient": "linear-gradient(#FFFFFF 10%, #E5EDF5, #E5EDF5, #E5EDF5)",
+          "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
           "button_label": "#ffffff",
