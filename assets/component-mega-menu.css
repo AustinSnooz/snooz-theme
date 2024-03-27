@@ -264,5 +264,6 @@
   background-color: #6CD7BD;
   position: absolute;
   left: -22%; /* Adjusts the starting position to the left */
+  border-radius: 5px;
 }
 

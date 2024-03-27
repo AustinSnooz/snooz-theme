@@ -11,11 +11,18 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const menuDetails = document.querySelectorAll('details.mega-menu');
+        let closeTimeout;
 
-        // Function to remove all underlines
         function removeAllUnderlines() {
           document.querySelectorAll('span.header__top-level-link.width-underline').forEach(function(span) {
             span.classList.remove('width-underline');
+          });
+        }
+
+        function closeAllMenus() {
+          menuDetails.forEach(function(detail) {
+            detail.removeAttribute('open');
+            detail.querySelector('span.header__top-level-link').classList.remove('width-underline');
           });
         }
 
@@ -23,46 +30,34 @@
           const summary = detail.querySelector('summary');
           const span = summary.querySelector('span.header__top-level-link');
 
-          detail.addEventListener('mouseover', function(event) {
-            // Add the underline when hovering
-            removeAllUnderlines(); // First remove all existing underlines
-            span.classList.add('width-underline');
-          });
-
-          detail.addEventListener('mouseout', function(event) {
-            // Remove the underline when not hovering
-            span.classList.remove('width-underline');
-          });
-        });
-
-        // If a user clicks anywhere else on the document, remove all underlines
-        document.addEventListener('click', function(event) {
-          if (!event.target.closest('.mega-menu')) {
-            removeAllUnderlines();
-          }
-        }, true);
-      });
-    </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const menuDetails = document.querySelectorAll('details.mega-menu');
-        let closeTimeout;
-
-        menuDetails.forEach(function(detail) {
           detail.addEventListener('mouseover', function() {
             // Clear any pending timeout to close the menu
             clearTimeout(closeTimeout);
-            // Open the menu on hover
+            // Close all other menus before opening the new one
+            closeAllMenus();
+            // Open the hovered menu and add underline
             detail.setAttribute('open', '');
+            span.classList.add('width-underline');
           });
 
           detail.addEventListener('mouseout', function() {
-            // Delay closing the menu
+            // Delay closing the menu and removing the underline
             closeTimeout = setTimeout(function() {
-              detail.removeAttribute('open');
+              if (!detail.querySelector(':hover')) {
+                detail.removeAttribute('open');
+                span.classList.remove('width-underline');
+              }
             }, 500); // Delay in milliseconds (500ms = 0.5 seconds)
           });
         });
+
+        // If a user clicks anywhere else on the document, remove all underlines and close menus
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.mega-menu')) {
+            removeAllUnderlines();
+            closeAllMenus();
+          }
+        }, true);
       });
     </script>
 
