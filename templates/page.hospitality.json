@@ -1,0 +1,74 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "blocks": {
+        "text_input_fzBnFf": {
+          "type": "text_input",
+          "settings": {
+            "label": "Name *",
+            "placeholder": "",
+            "required": true
+          }
+        },
+        "email_input_jF6riA": {
+          "type": "email_input",
+          "settings": {
+            "label": "Email *",
+            "placeholder": "",
+            "required": true
+          }
+        },
+        "text_input_VH4EJK": {
+          "type": "text_input",
+          "settings": {
+            "label": "Company\/Hotel",
+            "placeholder": "",
+            "required": false
+          }
+        },
+        "text_input_arC4V6": {
+          "type": "text_input",
+          "settings": {
+            "label": "Shipping Address",
+            "placeholder": "",
+            "required": false
+          }
+        },
+        "textarea_aXMpDq": {
+          "type": "textarea",
+          "settings": {
+            "label": "Additional Comments",
+            "placeholder": "Enter your message",
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "text_input_fzBnFf",
+        "email_input_jF6riA",
+        "text_input_VH4EJK",
+        "text_input_arC4V6",
+        "textarea_aXMpDq"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "form"
+  ]
+}
