@@ -5,8 +5,68 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
+
+
 <nav class="header__inline-menu">
-  <ul class="list-menu list-menu--inline" role="list">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuDetails = document.querySelectorAll('details.mega-menu');
+
+        // Function to remove all underlines
+        function removeAllUnderlines() {
+          document.querySelectorAll('span.header__top-level-link.width-underline').forEach(function(span) {
+            span.classList.remove('width-underline');
+          });
+        }
+
+        menuDetails.forEach(function(detail) {
+          const summary = detail.querySelector('summary');
+          const span = summary.querySelector('span.header__top-level-link');
+
+          detail.addEventListener('mouseover', function(event) {
+            // Add the underline when hovering
+            removeAllUnderlines(); // First remove all existing underlines
+            span.classList.add('width-underline');
+          });
+
+          detail.addEventListener('mouseout', function(event) {
+            // Remove the underline when not hovering
+            span.classList.remove('width-underline');
+          });
+        });
+
+        // If a user clicks anywhere else on the document, remove all underlines
+        document.addEventListener('click', function(event) {
+          if (!event.target.closest('.mega-menu')) {
+            removeAllUnderlines();
+          }
+        }, true);
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuDetails = document.querySelectorAll('details.mega-menu');
+        let closeTimeout;
+
+        menuDetails.forEach(function(detail) {
+          detail.addEventListener('mouseover', function() {
+            // Clear any pending timeout to close the menu
+            clearTimeout(closeTimeout);
+            // Open the menu on hover
+            detail.setAttribute('open', '');
+          });
+
+          detail.addEventListener('mouseout', function() {
+            // Delay closing the menu
+            closeTimeout = setTimeout(function() {
+              detail.removeAttribute('open');
+            }, 500); // Delay in milliseconds (500ms = 0.5 seconds)
+          });
+        });
+      });
+    </script>
+
+    <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
         {%- if link.links != blank -%}
@@ -16,6 +76,9 @@
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
               >
+              <a href="{{ link.url }}"
+                 class="header__menu-item list-menu__item link link--text focus-inset"
+              >
                 <span
                   {%- if link.child_active %}
                     class="header__active-menu-item header__top-level-link"
@@ -24,6 +87,7 @@
                 >
                   {{- link.title | escape -}}
                 </span>
+              </a>
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
@@ -69,6 +133,37 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+                  <div class="mega-menu__footer-links">
+                      {% assign index = forloop.index %}
+                      {% case index %}
+                          {% when 1 %}
+                              {% if section.settings.dropdown_footer1 %}
+                                  <ul class="mega-menu__footer-list">
+                                      {% for link in linklists[section.settings.dropdown_footer1].links %}
+                                          <li class="mega-menu__footer-item">
+                                              <a href="{{ link.url }}" class="mega-menu__footer-link">
+                                                  {{ link.title | escape }}
+                                                  <span class="mega-menu__footer-link-arrow">→</span>
+                                              </a>
+                                          </li>
+                                      {% endfor %}
+                                  </ul>
+                              {% endif %}
+                          {% when 2 %}
+                              {% if section.settings.dropdown_footer2 %}
+                                  <ul class="mega-menu__footer-list">
+                                      {% for link in linklists[section.settings.dropdown_footer2].links %}
+                                          <li class="mega-menu__footer-item">
+                                              <a href="{{ link.url }}" class="mega-menu__footer-link">
+                                                  {{ link.title | escape }}
+                                                  <span class="mega-menu__footer-link-arrow">→</span>
+                                              </a>
+                                          </li>
+                                      {% endfor %}
+                                  </ul>
+                              {% endif %}
+                      {% endcase %}
+                  </div>
               </div>
                   {% assign index = forloop.index %}
                   <div class="mega-menu__blocks-container">
@@ -128,9 +223,8 @@
           >
             <span
               {%- if link.current %}
-                class="header__active-menu-item header__top-level-link width-underline"
+                class="header__active-menu-item header__top-level-link"
               {% endif %}
-
               class="header__top-level-link"
             >
               {{- link.title | escape -}}

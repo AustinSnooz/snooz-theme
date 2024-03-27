@@ -19,19 +19,20 @@
 
 .mega-menu__content-container {
   width: 80%; /* Adjust to control the width of the inner content */
-  max-width: 1200px; /* Or any max-width that fits your design */
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
 }
 
 .mega-menu__links-container {
   flex: 1;
   display: flex;
+  align-items: start;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.1rem;
   max-width: 250px;
 }
 
@@ -40,13 +41,13 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.6rem;
 }
 
 .mega-menu__block_redesign {
   background: transparent;
   border: none;
-  margin-bottom: 2rem;
+  margin-bottom: 0.1rem;
   text-align: center;
   width: calc((100% / 4) - 2rem);
   max-width: 250px; /* Control the maximum size of the blocks */
@@ -63,31 +64,45 @@
 }
 
 .mega-menu__block_redesign .mega-menu__block-text {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 0.5rem;
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: flex-start; /* Aligns content to the left */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  line-height: normal;
+  margin-top: -15px;
 }
 
 .mega-menu__block_redesign .mega-menu__block-title {
-  grid-column: 2;
-  font-size: 1rem;
+  flex: 1 1 calc(100% - 120px); /* Adjust '120px' to the estimated maximum width of the blurb */
+  font-size: 13px;
+  font-family: quasimoda, sans-serif;
+  font-weight: normal;
+  text-align: left; /* Ensures text is aligned to the left */
+  white-space: normal; /* Allows text to wrap */
 }
 
 .mega-menu__block_redesign .mega-menu__block-blurb {
-  grid-column: 1 / -1;
+  flex: 0 1 auto; /* Does not grow, can shrink, initial width auto */
+  max-width: 120px; /* Set a max-width for the blurb */
   background-color: #D4E4ED;
-  border-radius: 15px;
-  padding: 5px 15px;
-  font-size: 0.75rem;
-  margin-top: -1rem; /* Adjust this value to move closer to the image */
-  justify-self: end;
+  border-radius: 10px;
+  padding: 3px 10px;
+  font-size: 8px;
+  font-weight: normal;
+  font-family: quasimoda, sans-serif;
+  margin-top: 0;
+  white-space: nowrap; /* Prevents the blurb text from wrapping */
+  line-height: normal;
 }
 
 .mega-menu__block_redesign .mega-menu__block-summary {
-  grid-column: 2;
-  font-size: 0.875rem;
-  margin-top: 0.5rem;
+  width: 100%; /* Makes the summary take the full width of the container */
+  margin-top: -8px;
+  font-size: 11px;
+  font-family: quasimoda, sans-serif;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: normal;
 }
 
 .shopify-section-header-sticky .mega-menu__content {
@@ -111,7 +126,7 @@
 .mega-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.1rem;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -119,31 +134,36 @@
 
 .mega-menu__list > li {
   display: block; /* Ensures each link is a block, taking full width */
+  line-height: 1.7;
 }
 
 .mega-menu__link {
   color: rgba(var(--color-foreground), 0.75);
-  padding: 0.6rem 0;
   text-decoration: none;
   transition: color var(--duration-short) ease;
+  line-height: normal;
 }
 
 .mega-menu__sublink {
   font-family: quasimoda, sans-serif;
   font-size: 14px;
   font-weight: normal;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  line-height: normal;
 }
 
 .mega-menu__headertext {
   font-family: quasimoda, sans-serif;
   font-size: 10px;
   font-weight: bolder;
+  margin-bottom: -2px;
+  line-height: 1.7;
 }
 
 .mega-menu__block {
-  background: #fff; /* Replace with actual colors and styling */
-  border: 1px solid #ccc; /* Placeholder for border */
-  padding: 1rem;
+  background: #fff;
+  padding: 0.5rem;
   width: calc(100% / 4 - 2rem); /* Adjust the width as needed */
 }
 
@@ -183,10 +203,51 @@
   font-weight: normal;
 }
 
-.header__top-level-link {
-  font-size: 16px;
-  font-weight: 500;
+.mega-menu__footer-link {
+  font-size: 14px; /* Match font size with top level links */
+  font-weight: 500; /* Adjust the weight if needed */
   font-family: quasimoda, sans-serif;
+  color: rgba(var(--color-foreground), 0.75); /* Match color with other links */
+  text-decoration: none; /* No underline by default */
+  padding: 0.6rem 0; /* Add padding to space out the links, adjust as needed */
+  display: block; /* Display block for the full clickable area */
+  position: relative; /* Set relative for absolute positioning of the pseudo-element */
+  line-height: 1;
+}
+
+.mega-menu__footer-link::after {
+  font-size: 18px; /* Adjust size as needed */
+  font-weight: 500; /* Match the weight of the link text if needed */
+  position: absolute;
+  right: 0; /* Position the arrow to the right */
+  top: 50%; /* Center the arrow vertically */
+  transform: translateY(-50%); /* Align center with the text */
+  pointer-events: none; /* Ensures the pseudo-element doesn't interfere with link interaction */
+}
+
+.mega-menu__footer-link:hover::after {
+  text-decoration: none; /* Removes the underline from the arrow on hover */
+}
+
+.mega-menu__footer-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #6CD7BD; /* The same as .mega-menu__link:hover */
+  text-decoration-thickness: 0.1rem;
+}
+
+.mega-menu__footer-list {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  padding: 0; /* Removes default padding on lists */
+  list-style-type: none; /* Removes default list item bullets */
+  width: 100%; /* Full width of the container */
+  margin-top: 15px;
+}
+
+.mega-menu__footer-list > li {
+  width: auto; /* Allows each item to only take up the space it needs */
+  padding-right: 2.4rem; /* Match the padding from .header--top-center .mega-menu__list > li, adjust as needed */
 }
 
 .width-underline {
@@ -204,3 +265,4 @@
   position: absolute;
   left: -22%; /* Adjusts the starting position to the left */
 }
+
