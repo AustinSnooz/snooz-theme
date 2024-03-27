@@ -53,7 +53,7 @@
         "mobile_image_with_link_gVCQ3M": {
           "type": "mobile_image_with_link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/snooz_pro_giveaway_hero_e5b58901-aade-4555-89f5-d64be9d63e2b.jpg",
+            "image": "shopify:\/\/shop_images\/snooz-pro-white-noise-machine-cotton_99a50d3d-146e-4799-8a04-2c6c59b2907c.jpg",
             "title": "Snooz Pro",
             "summary": "Get a Snooz Pro!",
             "link": "shopify:\/\/products\/snooz-pro-white-noise-machine"
@@ -160,6 +160,8 @@
         "menu": "desktop-menu-2024",
         "mobile_menu": "mobile-menu-redesign",
         "mobile_menu_footer": "mobile-footer-menu",
+        "dropdown_footer1": "",
+        "dropdown_footer2": "",
         "menu_type_desktop": "mega",
         "sticky_header_type": "always",
         "show_line_separator": true,
