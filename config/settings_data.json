@@ -2,7 +2,6 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/SNOOZ-Logo-PNG.png",
     "logo_width": 150,
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -229,7 +228,7 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#2f394e",
+          "text": "#545a71",
           "button": "#43dacc",
           "button_label": "#2f394e",
           "secondary_button_label": "#545a71",
