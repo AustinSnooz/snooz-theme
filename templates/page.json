@@ -19,7 +19,7 @@
         "email_input_3JdnBF": {
           "type": "email_input",
           "settings": {
-            "label": "Email",
+            "label": "Email *",
             "placeholder": "",
             "required": true
           }
@@ -35,7 +35,7 @@
         "textarea_hgq8zC": {
           "type": "textarea",
           "settings": {
-            "label": "Items to Return",
+            "label": "Items to Return *",
             "placeholder": "",
             "required": true
           }
