@@ -174,16 +174,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "replo_returns_gwxr4p": {
-      "type": "replo-returns",
-      "settings": {
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "replo_returns_gwxr4p"
+    "header"
   ]
 }
