@@ -5,12 +5,12 @@
   --alpha-badge-border: 0.1;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Larsseit, sans-serif !important;
-}
-
 body, p, li, a, span, div {
   font-family: quasimoda, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Larsseit, sans-serif !important;
 }
 
 .product-card-wrapper .card,
