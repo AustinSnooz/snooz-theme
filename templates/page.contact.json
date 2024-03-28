@@ -8,6 +8,11 @@
         "padding_bottom": 36
       }
     },
+    "replo_contact_us_wMLTA8": {
+      "type": "replo-contact-us",
+      "settings": {
+      }
+    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -21,6 +26,7 @@
   },
   "order": [
     "main",
+    "replo_contact_us_wMLTA8",
     "form"
   ]
 }
