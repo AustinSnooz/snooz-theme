@@ -35,7 +35,7 @@
         "text_input_VH4EJK": {
           "type": "text_input",
           "settings": {
-            "label": "Company\/Hotel",
+            "label": "Company \/ Hotel",
             "placeholder": "",
             "required": false
           }
@@ -43,7 +43,7 @@
         "text_input_arC4V6": {
           "type": "text_input",
           "settings": {
-            "label": "Shipping Address",
+            "label": "Number of Units for Quote (if applicable)",
             "placeholder": "",
             "required": false
           }
@@ -51,9 +51,9 @@
         "textarea_aXMpDq": {
           "type": "textarea",
           "settings": {
-            "label": "Additional Comments",
-            "placeholder": "Enter your message",
-            "required": false
+            "label": "Message (please include an address if you'd like a sample) *",
+            "placeholder": "",
+            "required": true
           }
         }
       },
