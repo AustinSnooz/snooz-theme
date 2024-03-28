@@ -19,7 +19,7 @@
         "text_input_BB9FCX": {
           "type": "text_input",
           "settings": {
-            "label": "Name",
+            "label": "First & Last Name",
             "placeholder": "",
             "required": true
           }
@@ -29,21 +29,48 @@
           "settings": {
             "label": "Email",
             "placeholder": "",
+            "required": true
+          }
+        },
+        "text_input_iRqgti": {
+          "type": "text_input",
+          "settings": {
+            "label": "Order Number (if applicable)",
+            "placeholder": "",
             "required": false
+          }
+        },
+        "dropdown_Nar7x9": {
+          "type": "dropdown",
+          "settings": {
+            "label": "Device Model (if applicable)",
+            "required": false,
+            "option1": "N\/A",
+            "option2": "SNOOZ Original",
+            "option3": "SNOOZ Pro",
+            "option4": "SNOOZ Go",
+            "option5": "SNOOZ Button",
+            "option6": "Breez",
+            "option7": "Other",
+            "option8": "Option 8",
+            "option9": "Option 9",
+            "option10": "Option 10"
           }
         },
         "textarea_BKUTf3": {
           "type": "textarea",
           "settings": {
-            "label": "Your Message",
-            "placeholder": "Enter your message",
-            "required": false
+            "label": "How can we help?",
+            "placeholder": "",
+            "required": true
           }
         }
       },
       "block_order": [
         "text_input_BB9FCX",
         "text_input_mWGWz3",
+        "text_input_iRqgti",
+        "dropdown_Nar7x9",
         "textarea_BKUTf3"
       ],
       "settings": {
