@@ -15,6 +15,37 @@
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "text_input_BB9FCX": {
+          "type": "text_input",
+          "settings": {
+            "label": "Name",
+            "placeholder": "",
+            "required": true
+          }
+        },
+        "text_input_mWGWz3": {
+          "type": "text_input",
+          "settings": {
+            "label": "Email",
+            "placeholder": "",
+            "required": false
+          }
+        },
+        "textarea_BKUTf3": {
+          "type": "textarea",
+          "settings": {
+            "label": "Your Message",
+            "placeholder": "Enter your message",
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "text_input_BB9FCX",
+        "text_input_mWGWz3",
+        "textarea_BKUTf3"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h1",

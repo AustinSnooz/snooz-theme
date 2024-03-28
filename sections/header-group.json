@@ -37,7 +37,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/snooz-original-white-noise-machine-cloud_2b70e3f4-d15c-461d-a610-286c6aab807d.jpg",
             "title": "SNOOZ Original",
-            "summary": "Get a snooz Original!",
+            "summary": "Real fan inside with app control for premium sleep white noise",
             "link": "shopify:\/\/products\/snooz-white-noise-machine"
           }
         },
@@ -46,7 +46,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/breez-shopify-hero.jpg",
             "title": "Breez",
-            "summary": "Get a Breez!",
+            "summary": "Smart bedroom fan with separate controls for air and sound",
             "link": "shopify:\/\/products\/snooz-breez-smart-bedroom-fan-sound-machine"
           }
         },
@@ -54,8 +54,8 @@
           "type": "mobile_image_with_link",
           "settings": {
             "image": "shopify:\/\/shop_images\/snooz-pro-white-noise-machine-cotton_99a50d3d-146e-4799-8a04-2c6c59b2907c.jpg",
-            "title": "Snooz Pro",
-            "summary": "Get a Snooz Pro!",
+            "title": "SNOOZ Pro",
+            "summary": "Latest model with real fan noise, upgraded features, and travel case",
             "link": "shopify:\/\/products\/snooz-pro-white-noise-machine"
           }
         },
@@ -63,8 +63,8 @@
           "type": "mobile_image_with_link",
           "settings": {
             "image": "shopify:\/\/shop_images\/photo_SNOOZ-Go-Travel-Sound-Machine-Charcoal---Top_Lg.jpg",
-            "title": "Snooz Go",
-            "summary": "Get a Snooz Go!",
+            "title": "SNOOZ Go",
+            "summary": "Travel white noise machine with Bluetooth speaker and night light",
             "link": "shopify:\/\/products\/snooz-go-travel-white-noise-machine"
           }
         },
@@ -174,10 +174,16 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "replo_returns_gwxr4p": {
+      "type": "replo-returns",
+      "settings": {
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "replo_returns_gwxr4p"
   ]
 }
