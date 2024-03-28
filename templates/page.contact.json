@@ -19,7 +19,7 @@
         "text_input_BB9FCX": {
           "type": "text_input",
           "settings": {
-            "label": "First & Last Name",
+            "label": "First & Last Name *",
             "placeholder": "",
             "required": true
           }
@@ -27,7 +27,7 @@
         "text_input_mWGWz3": {
           "type": "text_input",
           "settings": {
-            "label": "Email",
+            "label": "Email *",
             "placeholder": "",
             "required": true
           }
@@ -60,7 +60,7 @@
         "textarea_BKUTf3": {
           "type": "textarea",
           "settings": {
-            "label": "How can we help?",
+            "label": "How can we help? *",
             "placeholder": "",
             "required": true
           }
