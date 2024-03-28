@@ -114,6 +114,9 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/SNOOZ-Logo-PNG.png",
+    "checkout_accent_color": "#545a71",
+    "checkout_button_color": "#6cd7bd",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
