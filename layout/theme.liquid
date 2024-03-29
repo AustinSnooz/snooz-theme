@@ -29,11 +29,11 @@
 
     {% render 'meta-tags' %}
 
-    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script data-src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
+    <script data-src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script data-src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {%- if settings.animations_reveal_on_scroll -%}
-      <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
+      <script data-src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
     {{ content_for_header }}
@@ -267,7 +267,7 @@
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
-      <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
+      <script data-src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
     {%- if settings.predictive_search_enabled -%}
@@ -298,7 +298,7 @@
         suffix: "{{ template.suffix }}"
       };
     </script>
-    <script src="https://cdn.intelligems.io/301df8e2b17e.js"></script>
+    <script data-src="https://cdn.intelligems.io/301df8e2b17e.js"></script>
 
     <!-- RB2B -->
     <script>
@@ -400,7 +400,7 @@
     </script>
 
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+      <script data-src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
     <!-- Hotjar Tracking Code for https://getsnooz.com -->
@@ -423,6 +423,18 @@
         document.addEventListener('click', loadHotjar);
         document.addEventListener('scroll', loadHotjar, { passive: true });
       });
+    </script>
+
+    <!-- change back from data-src-->
+    <script type="text/javascript">
+      function init() {
+        document.querySelectorAll('script[data-src]').forEach(script => {
+          const dataSrc = script.getAttribute('data-src');
+          script.setAttribute('src', dataSrc);
+          script.removeAttribute('data-src');
+        });
+      }
+      window.onload = init;
     </script>
 
   </body>
