@@ -17,7 +17,7 @@
         "announcement_KUranm"
       ],
       "custom_css": [
-        "p {font-weight: bold; font-size: 1.5rem;}"
+        "p {font-weight: 600; font-size: 1.2rem;}"
       ],
       "settings": {
         "color_scheme": "scheme-4d3c822d-9eb9-4c0d-b7a6-7dd4cdbd1b30",
