@@ -1,7 +1,7 @@
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/SNOOZ-Logo-PNG.png",
-    "logo_width": 150,
+    "logo_width": 100,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -96,7 +96,7 @@
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_image": "shopify:\/\/shop_images\/SNOOZ-Logo-PNG.png",
-    "brand_image_width": 125,
+    "brand_image_width": 100,
     "social_facebook_link": "https:\/\/facebook.com\/getsnooz",
     "social_instagram_link": "https:\/\/www.instagram.com\/snooz\/",
     "social_youtube_link": "https:\/\/www.youtube.com\/@snoozsleep",
