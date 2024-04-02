@@ -260,10 +260,10 @@
   display: block;
   margin-top: 5px; /* Distance from the text */
   height: 3px; /* Thickness of the underline */
-  width: 150%; /* Width relative to the parent element, can be more than 100% */
+  width: 110%; /* Width relative to the parent element, can be more than 100% */
   background-color: #6CD7BD;
   position: absolute;
-  left: -22%; /* Adjusts the starting position to the left */
+  left: -4%; /* Adjusts the starting position to the left */
   border-radius: 5px;
 }
 
