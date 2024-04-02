@@ -260,10 +260,11 @@
   display: block;
   margin-top: 5px; /* Distance from the text */
   height: 3px; /* Thickness of the underline */
-  width: 110%; /* Width relative to the parent element, can be more than 100% */
+  width: 115px; /* Fixed width for the underline */
   background-color: #6CD7BD;
   position: absolute;
-  left: -4%; /* Adjusts the starting position to the left */
+  left: 50%; /* Position the left edge of the underline at the center */
+  transform: translateX(-50%); /* Center the underline with respect to its parent */
   border-radius: 5px;
 }
 
