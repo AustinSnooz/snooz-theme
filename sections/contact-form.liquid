@@ -31,13 +31,6 @@
       endif
     -%}
     {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
-
-      {%- if form.posted_successfully? -%}
-        <div class="form-success-message">
-          <p>Thank you for contacting us! We’ll be in touch shortly!</p>
-        </div>
-      {%- endif -%}
-
       <div class="grid grid--2-columns" style="gap: 20px;">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
