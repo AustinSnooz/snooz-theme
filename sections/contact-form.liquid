@@ -23,6 +23,13 @@
     {%- else -%}
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
+
+    {%- if form.posted_successfully? -%}
+      <div class="form-success-message">
+        <p>Thank you for contacting us!<br>We’ll be in touch shortly!</p>
+      </div>
+    {%- endif -%}
+
     {%- liquid
       assign contact_form_class = 'isolate'
       if settings.animations_reveal_on_scroll
