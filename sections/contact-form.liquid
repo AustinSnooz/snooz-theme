@@ -162,16 +162,16 @@
           {%- endcase -%}
         {%- endfor -%}
       </div>
-      {%- if form.posted_successfully? -%}
-        <div class="form-success-message">
-          <p>Thank you for contacting us! We’ll be in touch shortly!</p>
-        </div>
-      {%- endif -%}
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
         </button>
       </div>
+      {%- if form.posted_successfully? -%}
+        <div class="form-success-message">
+          <p>Thank you for contacting us! We’ll be in touch shortly!</p>
+        </div>
+      {%- endif -%}
     {%- endform -%}
   </div>
 </div>

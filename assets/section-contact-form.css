@@ -116,6 +116,10 @@ select.field__input::-ms-expand {
   font-weight: 500;
 }
 
+.form-success-message {
+  margin-top: -20px;
+}
+
 
 
 
