@@ -183,18 +183,6 @@
   padding-right: 2.4rem;
 }
 
-.mega-menu__link:hover,
-.mega-menu__link--active {
-  color: rgb(var(--color-foreground));
-  text-decoration: underline;
-  text-decoration-color: #6CD7BD;
-}
-
-.mega-menu__link--active:hover {
-  text-decoration-thickness: 0.2rem;
-  text-decoration-color: #6CD7BD;
-}
-
 .mega-menu .mega-menu__list--condensed {
   display: block;
 }
@@ -227,12 +215,6 @@
 
 .mega-menu__footer-link:hover::after {
   text-decoration: none; /* Removes the underline from the arrow on hover */
-}
-
-.mega-menu__footer-link:hover {
-  text-decoration: underline;
-  text-decoration-color: #6CD7BD; /* The same as .mega-menu__link:hover */
-  text-decoration-thickness: 0.1rem;
 }
 
 .mega-menu__footer-list {
