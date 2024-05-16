@@ -5,6 +5,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_4cw7FW": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
         "announcement_KUranm": {
           "type": "announcement",
           "settings": {
@@ -14,6 +21,7 @@
         }
       },
       "block_order": [
+        "announcement_4cw7FW",
         "announcement_KUranm"
       ],
       "custom_css": [
