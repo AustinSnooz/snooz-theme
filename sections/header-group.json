@@ -7,14 +7,23 @@
       "blocks": {
         "announcement_KUranm": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Free Shipping & Free Returns for 100 Nights",
+            "link": ""
+          }
+        },
+        "announcement_aqwkRF": {
+          "type": "announcement",
+          "settings": {
+            "text": "Spend $150, Get 15% Off | $200 → 20% Off |  $250 → 25% Off",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_KUranm"
+        "announcement_KUranm",
+        "announcement_aqwkRF"
       ],
       "custom_css": [
         "p {font-weight: 600; font-size: 1.3rem;}"
