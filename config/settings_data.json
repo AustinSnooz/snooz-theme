@@ -444,7 +444,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".Orichi-dynamic-checkout-button {display: none}"
+      "#upcart-additional-checkout-buttons {display: none !important;}"
     ]
   }
 }
