@@ -450,14 +450,10 @@
           var elem = document.getElementById('upcart-additional-checkout-buttons');
           if (elem) {
             elem.style.display = 'none';
-            console.log('Element hidden!');
             clearInterval(intervalId); // Stop the interval once the element is hidden
-          } else {
-            console.log('Element not found, retrying...'); // Log retries
           }
         } catch (error) {
-          console.error('Error hiding element:', error);
-          // Optionally retry after catching an error
+
         }
       }
 
