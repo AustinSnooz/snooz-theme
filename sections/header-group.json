@@ -16,7 +16,6 @@
       "blocks": {
         "announcement_KUranm": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Free Shipping & Free Returns for 100 Nights",
             "link": ""
@@ -32,6 +31,7 @@
         },
         "announcement_CyadJc": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Save 15% Off Entire Purchase. Use Code: PRIMEDAY",
             "link": ""
