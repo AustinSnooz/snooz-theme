@@ -48,6 +48,7 @@
     },
     "featured_collection_ncx8kN": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Best-Selling White Noise Machines",
         "heading_size": "h1",
