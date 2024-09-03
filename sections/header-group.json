@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_Gwh6a3": {
+          "type": "announcement",
+          "settings": {
+            "text": "Follow us on Instagram for a chance to win a free SNOOZ Pro",
+            "link": "https:\/\/getsnooz.com\/pages\/snooz-pro-giveaway"
+          }
+        },
         "announcement_KUranm": {
           "type": "announcement",
           "settings": {
@@ -39,6 +46,7 @@
         }
       },
       "block_order": [
+        "announcement_Gwh6a3",
         "announcement_KUranm",
         "announcement_aqwkRF",
         "announcement_CyadJc"
