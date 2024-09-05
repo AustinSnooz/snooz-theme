@@ -1,0 +1,95 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "replo_returns_ezJ7Ce": {
+      "type": "replo-returns",
+      "settings": {
+      }
+    },
+    "contact_form_BChdqh": {
+      "type": "contact-form",
+      "blocks": {
+        "email_input_3JdnBF": {
+          "type": "email_input",
+          "settings": {
+            "label": "Email *",
+            "placeholder": "",
+            "required": true
+          }
+        },
+        "text_input_wkchWE": {
+          "type": "text_input",
+          "settings": {
+            "label": "Order Number",
+            "placeholder": "",
+            "required": false
+          }
+        },
+        "textarea_hgq8zC": {
+          "type": "textarea",
+          "settings": {
+            "label": "Items to Return *",
+            "placeholder": "",
+            "required": true
+          }
+        },
+        "checkbox_group_k4zgx3": {
+          "type": "checkbox_group",
+          "settings": {
+            "checkboxes_description": "Please select your preferences:",
+            "checkbox_1_enabled": true,
+            "checkbox_1_label": "Defective",
+            "checkbox_2_enabled": true,
+            "checkbox_2_label": "Didn't like sound",
+            "checkbox_3_enabled": true,
+            "checkbox_3_label": "Didn't mask disturbances",
+            "checkbox_4_enabled": true,
+            "checkbox_4_label": "Not what I expected",
+            "checkbox_5_enabled": true,
+            "checkbox_5_label": "Other",
+            "checkbox_6_enabled": false,
+            "checkbox_6_label": "Checkbox 6",
+            "checkbox_7_enabled": false,
+            "checkbox_7_label": "Checkbox 7",
+            "checkbox_8_enabled": false,
+            "checkbox_8_label": "Checkbox 8"
+          }
+        }
+      },
+      "block_order": [
+        "email_input_3JdnBF",
+        "text_input_wkchWE",
+        "textarea_hgq8zC",
+        "checkbox_group_k4zgx3"
+      ],
+      "settings": {
+        "heading": "Return Request",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "replo_returns_ezJ7Ce",
+    "contact_form_BChdqh"
+  ]
+}
