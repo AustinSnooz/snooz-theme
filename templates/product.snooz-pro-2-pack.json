@@ -9,11 +9,6 @@
 */
 {
   "sections": {
-    "replo_big_fans_of_sleep_pdp_6mWwY8": {
-      "type": "replo-big-fans-of-sleep-pdp",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -158,11 +153,16 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "replo_pro_2_pack_pdp_3tQDDz": {
+      "type": "replo-pro-2-pack-pdp",
+      "settings": {
+      }
     }
   },
   "order": [
-    "replo_big_fans_of_sleep_pdp_6mWwY8",
     "main",
-    "related-products"
+    "related-products",
+    "replo_pro_2_pack_pdp_3tQDDz"
   ]
 }
