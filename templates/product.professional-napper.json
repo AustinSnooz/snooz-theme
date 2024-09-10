@@ -9,8 +9,8 @@
 */
 {
   "sections": {
-    "replo_big_fans_of_sleep_pdp_6mWwY8": {
-      "type": "replo-big-fans-of-sleep-pdp",
+    "replo_professional_napper_pdp_kR4f3Q": {
+      "type": "replo-professional-napper-pdp",
       "settings": {
       }
     },
@@ -161,7 +161,7 @@
     }
   },
   "order": [
-    "replo_big_fans_of_sleep_pdp_6mWwY8",
+    "replo_professional_napper_pdp_kR4f3Q",
     "main",
     "related-products"
   ]
