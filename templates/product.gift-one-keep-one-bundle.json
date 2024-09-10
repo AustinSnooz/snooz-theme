@@ -9,11 +9,6 @@
 */
 {
   "sections": {
-    "replo_dream_team_bundle_pdp_3dG9hB": {
-      "type": "replo-dream-team-bundle-pdp",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -158,11 +153,16 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "replo_gift_one_keep_one_pdp_iQcPwQ": {
+      "type": "replo-gift-one-keep-one-pdp",
+      "settings": {
+      }
     }
   },
   "order": [
-    "replo_dream_team_bundle_pdp_3dG9hB",
     "main",
-    "related-products"
+    "related-products",
+    "replo_gift_one_keep_one_pdp_iQcPwQ"
   ]
 }
