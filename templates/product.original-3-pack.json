@@ -9,11 +9,6 @@
 */
 {
   "sections": {
-    "replo_original_2_pack_pdp_KTVEXG": {
-      "type": "replo-original-2-pack-pdp",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -158,11 +153,16 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "replo_original_3_pack_pdp_zXqHdK": {
+      "type": "replo-original-3-pack-pdp",
+      "settings": {
+      }
     }
   },
   "order": [
-    "replo_original_2_pack_pdp_KTVEXG",
     "main",
-    "related-products"
+    "related-products",
+    "replo_original_3_pack_pdp_zXqHdK"
   ]
 }
