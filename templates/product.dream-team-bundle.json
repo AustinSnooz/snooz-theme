@@ -9,8 +9,8 @@
 */
 {
   "sections": {
-    "replo_big_fans_of_sleep_pdp_6mWwY8": {
-      "type": "replo-big-fans-of-sleep-pdp",
+    "replo_dream_team_bundle_pdp_3dG9hB": {
+      "type": "replo-dream-team-bundle-pdp",
       "settings": {
       }
     },
@@ -161,7 +161,7 @@
     }
   },
   "order": [
-    "replo_big_fans_of_sleep_pdp_6mWwY8",
+    "replo_dream_team_bundle_pdp_3dG9hB",
     "main",
     "related-products"
   ]
