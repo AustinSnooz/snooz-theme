@@ -9,8 +9,8 @@
 */
 {
   "sections": {
-    "replo_big_fans_of_sleep_pdp_6mWwY8": {
-      "type": "replo-big-fans-of-sleep-pdp",
+    "replo_climate_and_calm_pdp_xFnpN9": {
+      "type": "replo-climate-and-calm-pdp",
       "settings": {
       }
     },
@@ -161,7 +161,7 @@
     }
   },
   "order": [
-    "replo_big_fans_of_sleep_pdp_6mWwY8",
+    "replo_climate_and_calm_pdp_xFnpN9",
     "main",
     "related-products"
   ]
