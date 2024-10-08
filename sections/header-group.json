@@ -14,11 +14,18 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_CyadJc": {
+          "type": "announcement",
+          "settings": {
+            "text": "Save 15% Off Entire Purchase → Use Code: 15DEAL",
+            "link": ""
+          }
+        },
         "announcement_Gwh6a3": {
           "type": "announcement",
           "settings": {
             "text": "Follow us on Instagram for a chance to win a free SNOOZ Pro",
-            "link": "https:\/\/getsnooz.com\/pages\/snooz-pro-giveaway"
+            "link": "https://getsnooz.com/pages/snooz-pro-giveaway"
           }
         },
         "announcement_KUranm": {
@@ -35,21 +42,13 @@
             "text": "Spend $150, Get 15% Off | $200 → 20% Off |  $250 → 25% Off",
             "link": ""
           }
-        },
-        "announcement_CyadJc": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "Save 15% Off Entire Purchase ☀️ Use Code: LABOR15",
-            "link": ""
-          }
         }
       },
       "block_order": [
+        "announcement_CyadJc",
         "announcement_Gwh6a3",
         "announcement_KUranm",
-        "announcement_aqwkRF",
-        "announcement_CyadJc"
+        "announcement_aqwkRF"
       ],
       "custom_css": [
         "p {font-weight: 600; font-size: 1.3rem;}"
@@ -70,107 +69,107 @@
         "mobile_image_with_link_E83hkV": {
           "type": "mobile_image_with_link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/snooz-original-white-noise-machine-cloud_2b70e3f4-d15c-461d-a610-286c6aab807d.jpg",
+            "image": "shopify://shop_images/snooz-original-white-noise-machine-cloud_2b70e3f4-d15c-461d-a610-286c6aab807d.jpg",
             "title": "SNOOZ Original",
             "summary": "Best-selling real fan white noise machine",
-            "link": "shopify:\/\/products\/snooz-white-noise-machine"
+            "link": "shopify://products/snooz-white-noise-machine"
           }
         },
         "mobile_image_with_link_QEgJRX": {
           "type": "mobile_image_with_link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/breez-shopify-hero.jpg",
+            "image": "shopify://shop_images/breez-shopify-hero.jpg",
             "title": "Breez",
             "summary": "Two fans inside: one for air, one for sound",
-            "link": "shopify:\/\/products\/snooz-breez-smart-bedroom-fan-sound-machine"
+            "link": "shopify://products/snooz-breez-smart-bedroom-fan-sound-machine"
           }
         },
         "mobile_image_with_link_gVCQ3M": {
           "type": "mobile_image_with_link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/snooz-pro-white-noise-machine-cotton_99a50d3d-146e-4799-8a04-2c6c59b2907c.jpg",
+            "image": "shopify://shop_images/snooz-pro-white-noise-machine-cotton_99a50d3d-146e-4799-8a04-2c6c59b2907c.jpg",
             "title": "SNOOZ Pro",
             "summary": "Newest real fan noise model with travel case",
-            "link": "shopify:\/\/products\/snooz-pro-white-noise-machine"
+            "link": "shopify://products/snooz-pro-white-noise-machine"
           }
         },
         "mobile_image_with_link_7GNWqh": {
           "type": "mobile_image_with_link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/photo_SNOOZ-Go-Travel-Sound-Machine-Charcoal---Top_Lg.jpg",
+            "image": "shopify://shop_images/photo_SNOOZ-Go-Travel-Sound-Machine-Charcoal---Top_Lg.jpg",
             "title": "SNOOZ Go",
             "summary": "Portable noise machine with Bluetooth and light",
-            "link": "shopify:\/\/products\/snooz-go-travel-white-noise-machine"
+            "link": "shopify://products/snooz-go-travel-white-noise-machine"
           }
         },
         "dropdown1_image_AFXy4p": {
           "type": "dropdown1_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/snooz-original-white-noise-machine-cloud_2b70e3f4-d15c-461d-a610-286c6aab807d.jpg",
+            "image": "shopify://shop_images/snooz-original-white-noise-machine-cloud_2b70e3f4-d15c-461d-a610-286c6aab807d.jpg",
             "title": "SNOOZ Original",
             "blurb": "BESTSELLER",
             "summary": "Real fan inside with app control for premium sleep white noise",
-            "link": "shopify:\/\/products\/snooz-white-noise-machine"
+            "link": "shopify://products/snooz-white-noise-machine"
           }
         },
         "dropdown1_image_M6fXdg": {
           "type": "dropdown1_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/snooz-pro-white-noise-machine-cotton_99a50d3d-146e-4799-8a04-2c6c59b2907c.jpg",
+            "image": "shopify://shop_images/snooz-pro-white-noise-machine-cotton_99a50d3d-146e-4799-8a04-2c6c59b2907c.jpg",
             "title": "SNOOZ Pro",
             "blurb": "+ TRAVEL CASE",
             "summary": "Latest model with real fan noise, upgraded features, and travel case",
-            "link": "shopify:\/\/products\/snooz-pro-white-noise-machine"
+            "link": "shopify://products/snooz-pro-white-noise-machine"
           }
         },
         "dropdown1_image_zhAnxR": {
           "type": "dropdown1_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/photo_SNOOZ-Go-Travel-Sound-Machine-Charcoal---Top_Lg.jpg",
+            "image": "shopify://shop_images/photo_SNOOZ-Go-Travel-Sound-Machine-Charcoal---Top_Lg.jpg",
             "title": "SNOOZ Go",
             "blurb": "ULTRA-PORTABLE",
             "summary": "Travel white noise machine with Bluetooth speaker and night light",
-            "link": "shopify:\/\/products\/snooz-go-travel-white-noise-machine"
+            "link": "shopify://products/snooz-go-travel-white-noise-machine"
           }
         },
         "dropdown1_image_8iaaif": {
           "type": "dropdown1_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/breez-shopify-hero.jpg",
+            "image": "shopify://shop_images/breez-shopify-hero.jpg",
             "title": "Breez Bedroom Fan",
             "blurb": "2-IN-1",
             "summary": "Smart bedroom fan with separate controls for air and sound",
-            "link": "shopify:\/\/products\/snooz-breez-smart-bedroom-fan-sound-machine"
+            "link": "shopify://products/snooz-breez-smart-bedroom-fan-sound-machine"
           }
         },
         "dropdown2_image_Wm9jBb": {
           "type": "dropdown2_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DreamTeam.png",
+            "image": "shopify://shop_images/DreamTeam.png",
             "title": "Dream Team Bundle",
             "blurb": "SAVE $20",
             "summary": "The ultimate perfect nights sleep: Breez, SNOOZ Original, and Go",
-            "link": "shopify:\/\/products\/dream-team"
+            "link": "shopify://products/dream-team"
           }
         },
         "dropdown2_image_YVcd9L": {
           "type": "dropdown2_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/StayorGoTraveler_sSet.png",
+            "image": "shopify://shop_images/StayorGoTraveler_sSet.png",
             "title": "Stay or Go Travel Set",
             "blurb": "#1 GIFT",
             "summary": "SNOOZ Original, Travel Case, and Snooz Go",
-            "link": "shopify:\/\/products\/stay-or-go-bundle"
+            "link": "shopify://products/stay-or-go-bundle"
           }
         },
         "dropdown2_image_G9Rgxf": {
           "type": "dropdown2_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WellRestedRoommatesCloud.png",
+            "image": "shopify://shop_images/WellRestedRoommatesCloud.png",
             "title": "SNOOZ 2-Pack",
             "blurb": "SAVE $10",
             "summary": "2-Pack of SNOOZ Original",
-            "link": "shopify:\/\/products\/well-rested-roomate-set-2-pack-original"
+            "link": "shopify://products/well-rested-roomate-set-2-pack-original"
           }
         }
       },
