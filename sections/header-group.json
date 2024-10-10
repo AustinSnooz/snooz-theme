@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_CyadJc": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Save 15% Off Entire Purchase → Use Code: 15DEAL",
             "link": ""
