@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -10,8 +19,7 @@
     },
     "replo_hospitality24_qqfBtA": {
       "type": "replo-hospitality24",
-      "settings": {
-      }
+      "settings": {}
     },
     "form": {
       "type": "contact-form",
@@ -35,7 +43,7 @@
         "text_input_VH4EJK": {
           "type": "text_input",
           "settings": {
-            "label": "Company \/ Hotel",
+            "label": "Company / Hotel",
             "placeholder": "",
             "required": false
           }
@@ -46,6 +54,14 @@
             "label": "Number of Units for Quote (if applicable)",
             "placeholder": "",
             "required": false
+          }
+        },
+        "text_input_xQkCtP": {
+          "type": "text_input",
+          "settings": {
+            "label": "How did you hear about us?",
+            "placeholder": "",
+            "required": true
           }
         },
         "textarea_aXMpDq": {
@@ -62,6 +78,7 @@
         "email_input_jF6riA",
         "text_input_VH4EJK",
         "text_input_arC4V6",
+        "text_input_xQkCtP",
         "textarea_aXMpDq"
       ],
       "settings": {
