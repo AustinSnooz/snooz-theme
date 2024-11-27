@@ -1,4 +1,27 @@
-{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% capture reploVariantIdString %}null{% endcapture %}<!-- -->{% capture reploSellingPlanIdString %}null{% endcapture %}<!-- -->{% capture reploIdKey %}id{% endcapture %}<!-- -->{% capture spKey %}selling_plan{% endcapture %}<!-- -->{%- liquid
+{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<div style="width:100%;height:100%" data-alchemy-prerendered-placeholder="true">
+    {% if product %}
+      {% assign reploExistingProduct = product %}
+    {% endif %}
+
+    {% assign product = all_products['snooz-pro-white-noise-machine'] %} 
+    {% assign avg_rating = product.metafields.loox.avg_rating %}
+    {% assign num_reviews = product.metafields.loox.num_reviews %}
+    {% if false and shop.metafields.loox["global_stats"] != blank %}
+      {% assign looxstats = shop.metafields.loox["global_stats"] | split: ',' %}
+      {% assign avg_rating = looxstats[0] %}
+      {% assign num_reviews = looxstats[1] %}
+    {% endif %}
+    <div
+      class="loox-rating"
+      data-id="{{ product.id }}"
+      data-show-empty-stars="false"
+      data-rating="{{ avg_rating }}"
+      data-raters="{{ num_reviews }}"></div>
+
+    {% if reploExistingProduct %}
+      {% assign product = reploExistingProduct %} 
+    {% endif %}
+  </div>{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</div><div data-rid="0534339f-968e-44c0-a828-843d9d6b8517" data-replo-repeated-index=".0.0.0.0.0.0.0.0.0.0.0" class="r-rkqne8 alchemy-rte"><span style="width:100%"><p>{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.title}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</p></span></div><div data-rid="79259693-577d-42f4-9661-2e300fab23d9" data-replo-repeated-index=".0.0.0.0.0.0.0.0.0.0.0" class="r-b992hk alchemy-rte"><span style="width:100%"><p>Dusk</p></span></div><div data-rid="7a81505f-e9a1-4b6c-b33e-2b4de4194463" data-replo-repeated-index=".0.0.0.0.0.0.0.0.0.0.0" data-product-id="7913518792920" data-variant-id="43609466011864" data-replo-price="true" class="r-zvyvt2 alchemy-rte"><span style="width:100%"><p>{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{reploSelectedVariant.price | money}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</p></span></div></div><button data-rid="000d0f61-33d0-4580-9c25-8dcccabaf2aa" data-replo-add-product-variant-to-cart="" data-replo-repeated-index=".0.0.0.0.0.0.0.0.0.0" tabindex="0" role="button" class="text r-1xi1c9c alchemy-rte"><div data-rid="aabf3c85-2893-40b9-89f1-6a01005b59cc" data-replo-repeated-index=".0.0.0.0.0.0.0.0.0.0.0" class="r-6tde8a alchemy-rte"><span style="width:100%"><p>Add To Cart</p></span></div></button></div></div>{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% assign product = reploOriginalProductR1pb2 %}<!-- -->{% assign reploSelectedVariant = reploOriginalProductVariantR1pb2 %}<!-- -->{% assign reploSortedSellingPlans = reploOriginalSPGR1pb2 %}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = reploOriginalComparePricePercentR1pb2 %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</div></div></div></div></div></div><button data-rid="465aef0f-73b2-4d79-9b49-6100b36b3d7a" data-replo-add-product-variant-to-cart="" data-replo-repeated-index=".0.0.0" tabindex="0" role="button" class="text r-ce0c1y alchemy-rte"><div data-rid="37824ff3-ddb1-4578-827d-6e2d55cc24ac" data-replo-repeated-index=".0.0.0.0" tabindex="0" role="button" class="r-1knb4pc alchemy-rte"><span style="width:100%"><p>Shop SNOOZ Pro <span style="color: rgb(85, 85, 85)">→</span></p></span></div></button><div class="r-wpvj04" data-rid="1"><div data-rid="3fb2c939-0f7b-481b-96b6-47dcb38aed41" data-replo-repeated-index=".0.0.0" class="r-lbfqkh"><div data-rid="94642a8e-81dc-48a1-b1b5-c79fa6167eb1" data-replo-repeated-index=".0.0.0.0" class="r-qe503j alchemy-rte"><span style="width:100%"><h3>Travel Favorites</h3></span></div><div data-rid="bbc0276f-0eb3-484c-ae42-36e2fe4d8b86" data-replo-repeated-index=".0.0.0.0" class="r-1l927ns alchemy-rte"><span style="width:100%"><p><span style="color: rgb(0, 0, 0)">The perfect travel companions</span></p></span></div></div></div><div class="r-uf1sfa" data-rid="1"><div data-rid="00e63dc1-7e80-4bf2-9c46-7c7bf84ecee8" data-replo-repeated-index=".0.0.0" class="r-sf1x25"><div data-rid="2f3148ce-1cca-4682-9bb1-d2cb38e04f6e" data-replo-repeated-index=".0.0.0.0" class="r-ryefe7">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% assign reploOriginalProductRbn2 = product %}<!-- -->{% capture productHandle %}snooz-pro-white-noise-machine{% endcapture %}<!-- -->{% assign product = all_products[productHandle] %}<!-- -->{% assign reploOriginalProductVariantRbn2 = reploSelectedVariant %}<!-- -->{% assign reploSelectedVariant = blank %}<!-- -->{% assign reploOriginalSPGRbn2 = reploSortedSellingPlans %}<!-- -->{% assign reploSortedSellingPlans = blank %}<!-- -->{% assign reploOriginalComparePricePercentRbn2 = reploCompareAtPriceDifferencePercentage %}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = blank %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}<!-- -->{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% capture reploVariantIdString %}null{% endcapture %}<!-- -->{% capture reploSellingPlanIdString %}null{% endcapture %}<!-- -->{% capture reploIdKey %}id{% endcapture %}<!-- -->{% capture spKey %}selling_plan{% endcapture %}<!-- -->{%- liquid
               assign reploVariantId = reploVariantIdString | times: 1
               assign reploSelectedVariant = product.variants | where: reploIdKey, reploVariantId | first
               if reploSelectedVariant == blank
