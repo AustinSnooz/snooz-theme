@@ -119,6 +119,7 @@
         "collapsible-row-3",
         "share"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
@@ -219,6 +220,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -234,12 +236,17 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "replo_snooz_digital_giftcard_Kj9TmU": {
+      "type": "replo-snooz-digital-giftcard",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "related-products"
+    "related-products",
+    "replo_snooz_digital_giftcard_Kj9TmU"
   ]
 }
