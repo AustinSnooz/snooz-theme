@@ -1,17 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/SNOOZ-Logo-PNG.png",
+    "logo": "shopify://shop_images/SNOOZ-Logo-PNG.png",
     "logo_width": 90,
-    "favicon": "shopify:\/\/shop_images\/snooz_favicon_blue.png",
+    "favicon": "shopify://shop_images/snooz_favicon_blue.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -105,15 +105,15 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "brand_image": "shopify:\/\/shop_images\/SNOOZ-Logo-PNG.png",
+    "brand_image": "shopify://shop_images/SNOOZ-Logo-PNG.png",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/facebook.com\/getsnooz",
-    "social_instagram_link": "https:\/\/www.instagram.com\/snooz\/",
-    "social_youtube_link": "https:\/\/www.youtube.com\/@snoozsleep",
+    "social_facebook_link": "https://facebook.com/getsnooz",
+    "social_instagram_link": "https://www.instagram.com/snooz/",
+    "social_youtube_link": "https://www.youtube.com/@snoozsleep",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/snoozsleep\/",
+    "social_pinterest_link": "https://www.pinterest.com/snoozsleep/",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -124,7 +124,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/SNOOZ-Logo-PNG.png",
+    "checkout_logo_image": "shopify://shop_images/SNOOZ-Logo-PNG.png",
     "checkout_accent_color": "#545a71",
     "checkout_button_color": "#6cd7bd",
     "sections": {
@@ -139,41 +139,43 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
+      },
+      "gift-card-image": {
+        "type": "gift-card-image",
+        "settings": {
+          "gift_card_image": "shopify://shop_images/gift_one_keep_one_bundle_8a3ef199-5adf-4dc8-a483-1662b4ad4005.jpg",
+          "image_alt": "Gift card",
+          "image_width": 540,
+          "image_height": 400
+        }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "11532412952436166569": {
-        "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-inject\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "type": "shopify://apps/loox-reviews/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "2267199344015275021": {
-        "type": "shopify:\/\/apps\/deliverr-fast-tags\/blocks\/main\/d1895120-1caf-4af4-97c2-280d442481f8",
+        "type": "shopify://apps/deliverr-fast-tags/blocks/main/d1895120-1caf-4af4-97c2-280d442481f8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "14952540001915115444": {
-        "type": "shopify:\/\/apps\/upcart-cart-drawer\/blocks\/app-embed\/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
+        "type": "shopify://apps/upcart-cart-drawer/blocks/app-embed/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "8171265131012698934": {
-        "type": "shopify:\/\/apps\/orichi-quantity-breaks\/blocks\/orichi-discount\/3f38eaa3-2a3f-4e55-bcc9-df5d3f75e351",
+        "type": "shopify://apps/orichi-quantity-breaks/blocks/orichi-discount/3f38eaa3-2a3f-4e55-bcc9-df5d3f75e351",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
