@@ -60,13 +60,14 @@
 
 {% style %}
     .gift-card-section__container {
-    width: {{ image_width }}px;
-    margin: 2rem auto;
+        width: {{ image_width }}px;
+        max-width: 95vw;
+        margin: 2rem auto;
     }
 
     .gift-card-section__image {
-    width: 100%;
-    height: {{ image_height }}px;
-    object-fit: contain;
+        width: 100%;
+        height: {{ image_height }}px;
+        object-fit: contain;
     }
 {% endstyle %}
