@@ -143,7 +143,7 @@
       "gift-card-image": {
         "type": "gift-card-image",
         "settings": {
-          "gift_card_image": "shopify://shop_images/gift_one_keep_one_bundle_8a3ef199-5adf-4dc8-a483-1662b4ad4005.jpg",
+          "gift_card_image": "shopify://shop_images/Gift_card_transparent.png",
           "image_alt": "Gift card",
           "image_width": 540,
           "image_height": 400
