@@ -144,11 +144,11 @@
         "dropdown1_image_8iaaif": {
           "type": "dropdown1_image",
           "settings": {
-            "image": "shopify://shop_images/breez-shopify-hero.jpg",
-            "title": "Breez Bedroom Fan",
-            "blurb": "2-IN-1",
-            "summary": "Smart bedroom fan with separate controls for air and sound",
-            "link": "shopify://products/snooz-breez-smart-bedroom-fan-sound-machine"
+            "image": "shopify://shop_images/gift_cards-08.png",
+            "title": "SNOOZ Gift Card",
+            "blurb": "Digital",
+            "summary": "Let them choose their SNOOZ with a gift card.",
+            "link": "shopify://products/snooz-digital-gift-card"
           }
         },
         "dropdown2_image_Wm9jBb": {

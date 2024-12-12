@@ -145,8 +145,7 @@
         "settings": {
           "gift_card_image": "shopify://shop_images/Gift_card_transparent.png",
           "image_alt": "Gift card",
-          "image_width": 540,
-          "image_height": 400
+          "image_width": 540
         }
       }
     },
