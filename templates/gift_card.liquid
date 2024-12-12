@@ -173,6 +173,24 @@
 <div hidden>
     <span id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</span>
 </div>
+
+<!-- Script for removing yellow buttons on bottom of screen from the cart addon -->
+<script>
+  function tryHideElement() {
+    try {
+      var elem = document.getElementById('upcart-additional-checkout-buttons');
+      if (elem) {
+        elem.style.display = 'none';
+        clearInterval(intervalId); // Stop the interval once the element is hidden
+      }
+    } catch (error) {
+
+    }
+  }
+
+  var intervalId = setInterval(tryHideElement, 100); // Check every 100 milliseconds
+</script>
+
 </body>
 </html>
 
