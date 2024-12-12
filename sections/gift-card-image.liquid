@@ -26,13 +26,13 @@
     },
     {
       "type": "range",
-      "id": "image_height",
-      "min": 100,
-      "max": 600,
-      "step": 25,
+      "id": "container_margins",
+      "min": 0,
+      "max": 96,
+      "step": 8,
       "unit": "px",
-      "label": "Image height",
-      "default": 250
+      "label": "Container vertical margins",
+      "default": 16
     }
   ],
   "presets": [
@@ -45,7 +45,7 @@
 
 <div class="gift-card-section__container">
     {%- assign image_width = section.settings.image_width | default: 380 -%}
-    {%- assign image_height = section.settings.image_height | default: 250 -%}
+    {%- assign container_margins = section.settings.container_margins | default: 0 -%}
 
     {%- if section.settings.gift_card_image -%}
         {{ section.settings.gift_card_image | image_url: width: image_width | image_tag:
@@ -62,12 +62,19 @@
     .gift-card-section__container {
         width: {{ image_width }}px;
         max-width: 95vw;
-        margin: 0 auto;
+        margin: {{ container_margins }}px auto;
     }
 
     .gift-card-section__image {
         width: 100%;
-        height: {{ image_height }}px;
+        height: auto;
         object-fit: contain;
+    }
+
+    @media (max-width 768px) {
+        .gift-card-section__image {
+            width: 100%;
+            height: auto;
+        }
     }
 {% endstyle %}
