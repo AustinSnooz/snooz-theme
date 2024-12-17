@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_C7cdpt": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Order by December 15 to receive by Christmas!",
             "link": ""
