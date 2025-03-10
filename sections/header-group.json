@@ -22,6 +22,14 @@
             "link": ""
           }
         },
+        "announcement_PeMEP8": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Sleep Awareness Week Sale: Free Go with any Bundle or Breez!",
+            "link": ""
+          }
+        },
         "announcement_CyadJc": {
           "type": "announcement",
           "disabled": true,
@@ -55,6 +63,7 @@
       },
       "block_order": [
         "announcement_C7cdpt",
+        "announcement_PeMEP8",
         "announcement_CyadJc",
         "announcement_Gwh6a3",
         "announcement_KUranm",
