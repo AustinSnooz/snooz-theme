@@ -24,6 +24,7 @@
         },
         "announcement_PeMEP8": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Sleep Awareness Week Sale: Free Go with any orders over $150",
             "link": ""
