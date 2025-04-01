@@ -38,6 +38,13 @@
             "link": ""
           }
         },
+        "announcement_r8eYAw": {
+          "type": "announcement",
+          "settings": {
+            "text": "1 Day Sale: Free Travel Case with Purchase of ANY SNOOZ Original, Including Bundles",
+            "link": ""
+          }
+        },
         "announcement_Gwh6a3": {
           "type": "announcement",
           "settings": {
@@ -65,6 +72,7 @@
         "announcement_C7cdpt",
         "announcement_PeMEP8",
         "announcement_CyadJc",
+        "announcement_r8eYAw",
         "announcement_Gwh6a3",
         "announcement_KUranm",
         "announcement_aqwkRF"
