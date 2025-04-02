@@ -40,6 +40,7 @@
         },
         "announcement_r8eYAw": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "1 Day Sale: Free Travel Case with Purchase of ANY SNOOZ Original, Including Bundles",
             "link": ""
