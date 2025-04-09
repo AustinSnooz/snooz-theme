@@ -48,6 +48,7 @@
         },
         "announcement_Gwh6a3": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Follow us on Instagram for a chance to win a free SNOOZ Pro",
             "link": "https://getsnooz.com/pages/snooz-pro-giveaway"
