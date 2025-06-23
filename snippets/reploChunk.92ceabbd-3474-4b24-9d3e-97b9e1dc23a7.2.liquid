@@ -1,0 +1,26 @@
+{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.handle}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"><product-form style="display:none"><form id="product-form-{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" method="post" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" encType="multipart/form-data" action="/cart/add" data-type="add-to-cart-form"><input type="hidden" name="id" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{reploSelectedVariant.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/><input type="hidden" name="quantity" value="1"/><input type="hidden" name="selling_plan" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- if reploSelectedSellingPlan != blank -%}{{reploSelectedSellingPlan.id}}{%- endif -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/></form></product-form><div data-rid="ec0ad854-d457-4520-b3cf-fa7977ad2a02" class="r-anik1w" data-alchemy-prerendered-component-id="ec0ad854-d457-4520-b3cf-fa7977ad2a02">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<div style="width:100%;height:100%" data-alchemy-prerendered-placeholder="true">
+    {% if product %}
+      {% assign reploExistingProduct = product %}
+    {% endif %}
+
+    {% assign product = all_products['snooz-white-noise-machine'] %} 
+  <div id="looxReviews" data-product-id="{{product.id}}" class="loox-reviews-default"></div>
+  
+
+    {% if reploExistingProduct %}
+      {% assign product = reploExistingProduct %} 
+    {% endif %}
+  </div>{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</div>{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% assign product = reploOriginalProductR5lb2 %}<!-- -->{% assign reploSelectedVariant = reploOriginalProductVariantR5lb2 %}<!-- -->{% assign reploSortedSellingPlans = reploOriginalSPGR5lb2 %}<!-- -->{% assign reploSelectedSellingPlan = reploOriginalSSPR5lb2 %}<!-- -->{% assign reploSelectedSellingPlanPrice = reploOriginalSSPPriceR5lb2 %}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = reploOriginalComparePricePercentR5lb2 %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</div></div></div></div></div></div><style>@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900;950&family=Nanum+Gothic:wght@100;200;300;400;500;600;700;800;900;950)</style><style id="replo-fonts-Larsseit-Bold">
+        @font-face {
+          font-family: "Larsseit-Bold";
+          src: url("https://cdn.shopify.com/s/files/1/1378/8621/files/Larsseit-Bold_725580ad-4cf1-4890-a734-ce6633384be4.woff?v=1739296867") format("woff");
+        }
+      </style></div>
+{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}
+    <script  type="application/json" id="replo-deps-template-product">
+    {"id": "{{ product.id }}","handle": "{{ product.handle }}","data":{{ product | json }}}
+    </script>
+  <script type="application/json" id="replo-deps-products">
+    [{"id": "{{ product.id }}","handle": "{{ product.handle }}","data":{{ product | json }}}, {"id":"9281552577","handle": "snooz-white-noise-machine","data":{{ all_products['snooz-white-noise-machine'] | json }}},{"id":"8062382571736","handle": "everyone-gets-a-snooz","data":{{ all_products['everyone-gets-a-snooz'] | json }}},{"id":"7913518792920","handle": "snooz-pro-white-noise-machine","data":{{ all_products['snooz-pro-white-noise-machine'] | json }}},{"id":"8062371823832","handle": "well-rested-roomates-set-pro-midnight","data":{{ all_products['well-rested-roomates-set-pro-midnight'] | json }}},{"id":"5422665728164","handle": "snooz-go-travel-white-noise-machine","data":{{ all_products['snooz-go-travel-white-noise-machine'] | json }}},{"id":"8062378442968","handle": "snooz-in-every-room","data":{{ all_products['snooz-in-every-room'] | json }}},{"id":"4482046001224","handle": "snooz-white-noise-sound-machine-travel-case","data":{{ all_products['snooz-white-noise-sound-machine-travel-case'] | json }}},{"id":"8009361555672","handle": "snooz-breez-smart-bedroom-fan-sound-machine","data":{{ all_products['snooz-breez-smart-bedroom-fan-sound-machine'] | json }}}]
+  </script>
+  {%- comment -%}replo-liquid-chunk-end{%- endcomment -%}{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<script type="application/json" id="replo-deps-shopify-store">{ "shop": { "moneyFormat": {{ shop.money_format | json }}, "moneyWithCurrencyFormat": {{ shop.money_with_currency_format | json }}, } }</script>{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}
