@@ -18,7 +18,7 @@
       "type": "main-blog",
       "custom_css": [],
       "settings": {
-        "layout": "grid",
+        "layout": "collage",
         "show_image": true,
         "image_height": "medium",
         "show_date": false,
