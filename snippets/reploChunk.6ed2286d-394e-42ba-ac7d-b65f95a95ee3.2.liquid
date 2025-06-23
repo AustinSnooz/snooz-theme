@@ -1,0 +1,53 @@
+/line></svg></span></div></div><div data-rid="bf0da458-4992-48cb-9c98-18ca30c9f59a" class="r-xrv5pv"><div data-rid="d349530a-3132-42a1-a3b7-26f2128425f0" class="r-s7ut6s alchemy-rte"><span style="width:100%"><p>1 timer per day</p></span></div></div><div data-rid="00a0cf63-8657-49fb-91b9-7b3e8bf41d17" class="r-157j3bi"><div data-rid="2599f83a-e542-4429-970e-8983896eb740" class="r-8ihbxh"><span style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" style="fill: none;stroke: currentColor;width: var(--rsw, 100%);height: 100%" role="presentation"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span></div></div><div data-rid="e32f8d37-da1d-4334-a243-c79a2a9b3663" class="r-c98mbv"><div data-rid="cb066048-008a-478e-9840-82e7d3ae7ae7" class="r-18lb0fa alchemy-rte"><span style="width:100%"><p>Cloud, Charcoal</p></span></div></div><div data-rid="d3404e9a-9541-4b12-ba08-5f0409e51d0c" class="r-fl8yec"><div data-rid="8c45a8c4-549b-47ae-b30d-75cba977724f" class="r-1inuilq alchemy-rte"><span style="width:100%"><p>One Year</p></span></div></div></div></div></div></div></div></div></div></div></div><div data-rid="5e62c04f-a5fd-41fb-aa14-18ee9ca5e8b0" data-alchemy-url-hashmark="reviewspro" tabindex="-1" id="reviewspro" data-alchemy-url-hashmark-ignore="true" class="r-2hk1sj">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% assign reploOriginalProductR5lb2 = product %}<!-- -->{% capture productHandle %}snooz-white-noise-machine{% endcapture %}<!-- -->{% assign product = all_products[productHandle] %}<!-- -->{% assign reploOriginalProductVariantR5lb2 = reploSelectedVariant %}<!-- -->{% assign reploSelectedVariant = blank %}<!-- -->{% assign reploOriginalSPGR5lb2 = reploSortedSellingPlans %}<!-- -->{% assign reploSortedSellingPlans = blank %}<!-- -->{% assign reploOriginalSSPR5lb2 = reploSelectedSellingPlan %}<!-- -->{% assign reploSelectedSellingPlan = blank %}<!-- -->{% assign reploOriginalSSPPriceR5lb2 = reploSelectedSellingPlanPrice %}<!-- -->{% assign reploSelectedSellingPlanPrice = blank %}<!-- -->{% assign reploOriginalComparePricePercentR5lb2 = reploCompareAtPriceDifferencePercentage %}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = blank %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}<!-- -->{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% capture reploVariantIdString %}null{% endcapture %}<!-- -->{% capture reploSellingPlanIdString %}null{% endcapture %}<!-- -->{% capture reploIdKey %}id{% endcapture %}<!-- -->{% capture reploPercentageKey %}percentage{% endcapture %}<!-- -->{% capture reploPriceKey %}price{% endcapture %}<!-- -->{% capture reploFixedAmountKey %}fixed_amount{% endcapture %}<!-- -->{% capture spKey %}selling_plan{% endcapture %}<!-- -->{%- liquid
+              assign reploVariantId = reploVariantIdString | times: 1
+              assign reploSelectedVariant = product.variants | where: reploIdKey, reploVariantId | first
+              if reploSelectedVariant == blank
+                assign reploSelectedVariant = product.selected_or_first_available_variant
+              endif
+              assign reploSelectedSellingPlanPrice = reploSelectedVariant.price
+              if product.selling_plan_groups[0]
+                assign reploAllSellingPlans = reploSelectedVariant.selling_plan_allocations | map: spKey
+                assign reploSortedSellingPlans = reploAllSellingPlans | sort: reploIdKey
+                if true
+                  assign reploSellingPlanId = reploSellingPlanIdString | times: 1
+                  assign reploSelectedSellingPlan = reploSortedSellingPlans | where: reploIdKey, reploSellingPlanId | first
+                  if reploSelectedSellingPlan.price_adjustments[0]
+                    assign adjustment = reploSelectedSellingPlan.price_adjustments[0]
+                    case adjustment.value_type
+                      when reploPercentageKey
+                        assign amountOff = 100 | minus: adjustment.value
+                        assign reploSelectedSellingPlanPrice = reploSelectedSellingPlanPrice | times: amountOff | divided_by: 100
+                      when reploFixedAmountKey
+                        assign reploSelectedSellingPlanPrice = reploSelectedSellingPlanPrice | minus: adjustment.value
+                      when reploPriceKey
+                        assign reploSelectedSellingPlanPrice = adjustment.value
+                    endcase
+                  endif
+                endif
+              endif
+            -%}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = 0 %}<!-- -->{% if reploSelectedVariant.compare_at_price != blank %}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = reploSelectedVariant.compare_at_price | minus: reploSelectedVariant.price | at_least: 0 | times: 100.0 | divided_by: reploSelectedVariant.compare_at_price | round %}<!-- -->{% endif %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}<div data-rid="b0735e67-cd28-4ce5-95b0-463afb9b9a5b" class="r-106w9yw" data-replo-product-container="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" data-replo-product-handle="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.handle}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"><product-form style="display:none"><form id="product-form-{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" method="post" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" encType="multipart/form-data" action="/cart/add" data-type="add-to-cart-form"><input type="hidden" name="id" data-productid="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{product.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{{reploSelectedVariant.id}}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/><input type="hidden" name="quantity" value="1"/><input type="hidden" name="selling_plan" value="{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}{%- if reploSelectedSellingPlan != blank -%}{{reploSelectedSellingPlan.id}}{%- endif -%}{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}"/></form></product-form><div data-rid="0362275f-b3a3-46e0-a687-6e1ba62580b8" class="r-1157ex1" data-alchemy-prerendered-component-id="0362275f-b3a3-46e0-a687-6e1ba62580b8">{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<div style="width:100%;height:100%" data-alchemy-prerendered-placeholder="true">
+    {% if product %}
+      {% assign reploExistingProduct = product %}
+    {% endif %}
+
+    {% assign product = all_products['snooz-white-noise-machine'] %} 
+  <div id="looxReviews" data-product-id="{{product.id}}" class="loox-reviews-default"></div>
+  
+
+    {% if reploExistingProduct %}
+      {% assign product = reploExistingProduct %} 
+    {% endif %}
+  </div>{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</div>{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<!-- -->{% assign product = reploOriginalProductR5lb2 %}<!-- -->{% assign reploSelectedVariant = reploOriginalProductVariantR5lb2 %}<!-- -->{% assign reploSortedSellingPlans = reploOriginalSPGR5lb2 %}<!-- -->{% assign reploSelectedSellingPlan = reploOriginalSSPR5lb2 %}<!-- -->{% assign reploSelectedSellingPlanPrice = reploOriginalSSPPriceR5lb2 %}<!-- -->{% assign reploCompareAtPriceDifferencePercentage = reploOriginalComparePricePercentR5lb2 %}<!-- -->{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}</div></div></div></div></div></div><style>@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900;950&family=Nanum+Gothic:wght@100;200;300;400;500;600;700;800;900;950)</style><style id="replo-fonts-Larsseit-Bold">
+        @font-face {
+          font-family: "Larsseit-Bold";
+          src: url("https://cdn.shopify.com/s/files/1/1378/8621/files/Larsseit-Bold_725580ad-4cf1-4890-a734-ce6633384be4.woff?v=1739296867") format("woff");
+        }
+      </style></div>
+{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}
+    <script  type="application/json" id="replo-deps-template-product">
+    {"id": "{{ product.id }}","handle": "{{ product.handle }}","data":{{ product | json }}}
+    </script>
+  <script type="application/json" id="replo-deps-products">
+    [{"id": "{{ product.id }}","handle": "{{ product.handle }}","data":{{ product | json }}}, {"id":"9281552577","handle": "snooz-white-noise-machine","data":{{ all_products['snooz-white-noise-machine'] | json }}},{"id":"8062381523160","handle": "well-rested-roomate-set-2-pack-original","data":{{ all_products['well-rested-roomate-set-2-pack-original'] | json }}},{"id":"8062378442968","handle": "snooz-in-every-room","data":{{ all_products['snooz-in-every-room'] | json }}},{"id":"7913518792920","handle": "snooz-pro-white-noise-machine","data":{{ all_products['snooz-pro-white-noise-machine'] | json }}},{"id":"8062382571736","handle": "everyone-gets-a-snooz","data":{{ all_products['everyone-gets-a-snooz'] | json }}},{"id":"5422665728164","handle": "snooz-go-travel-white-noise-machine","data":{{ all_products['snooz-go-travel-white-noise-machine'] | json }}},{"id":"8062386897112","handle": "professional-napper-bundle","data":{{ all_products['professional-napper-bundle'] | json }}},{"id":"4482046001224","handle": "snooz-white-noise-sound-machine-travel-case","data":{{ all_products['snooz-white-noise-sound-machine-travel-case'] | json }}},{"id":"8009361555672","handle": "snooz-breez-smart-bedroom-fan-sound-machine","data":{{ all_products['snooz-breez-smart-bedroom-fan-sound-machine'] | json }}}]
+  </script>
+  {%- comment -%}replo-liquid-chunk-end{%- endcomment -%}{%- comment -%}replo-liquid-chunk-begin{%- endcomment -%}<script type="application/json" id="replo-deps-shopify-store">{ "shop": { "moneyFormat": {{ shop.money_format | json }}, "moneyWithCurrencyFormat": {{ shop.money_with_currency_format | json }}, } }</script>{%- comment -%}replo-liquid-chunk-end{%- endcomment -%}
