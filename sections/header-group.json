@@ -16,10 +16,9 @@
       "blocks": {
         "announcement_C7cdpt": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Order by December 15 to receive by Christmas!",
-            "link": ""
+            "text": "15% Sitewide Sale - Use 15PRIME at checkout",
+            "link": "https://getsnooz.com/discount/15PRIME?redirect=/pages/shop-all"
           }
         },
         "announcement_PeMEP8": {
