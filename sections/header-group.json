@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_C7cdpt": {
-          "type": "announcement",
-          "settings": {
-            "text": "15% Sitewide Sale - Use 15PRIME at checkout",
-            "link": "https://getsnooz.com/discount/15PRIME?redirect=/pages/shop-all"
-          }
-        },
         "announcement_PeMEP8": {
           "type": "announcement",
           "disabled": true,
@@ -70,7 +63,6 @@
         }
       },
       "block_order": [
-        "announcement_C7cdpt",
         "announcement_PeMEP8",
         "announcement_CyadJc",
         "announcement_r8eYAw",
