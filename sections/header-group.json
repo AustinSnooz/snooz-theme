@@ -49,7 +49,7 @@
         "announcement_KUranm": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping & Free Returns for 100 Nights",
+            "text": "Free Shipping on orders over $150",
             "link": ""
           }
         },
